@@ -1,0 +1,346 @@
+:root {
+  --azul-nocturno: #01062C;
+  --azul-abisal:   #022C38;
+  --azul-oceano:   #00506C;
+  --azul-cian:     #4E9DBE;
+  --azul-hielo:    #AFC9D9;
+  --gris-azulado:  #A2BCC6;
+  --blanco:        #FFFFFF;
+  --fondo-pagina:  #F4F8FA;
+  --texto-oscuro:  #0C1B24;
+  --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--fondo-pagina);
+  color: var(--texto-oscuro);
+  line-height: 1.6;
+}
+
+.barra-navegacion {
+  background-color: var(--azul-nocturno);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 3px solid var(--azul-cian);
+  box-shadow: 0 4px 12px rgba(1, 6, 44, 0.3);
+}
+
+.contenedor-navegacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlace-marca-sitio {
+  color: var(--blanco);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.boton-abrir-menu {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--azul-hielo);
+  color: var(--blanco);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.icono-menu-navegacion::after {
+  content: "☰";
+  font-size: 1.2rem;
+  color: var(--blanco);
+}
+
+.lista-enlaces-navegacion {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.enlace-navegacion {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.enlace-navegacion:hover,
+.enlace-navegacion[aria-current="page"] {
+  background-color: var(--azul-oceano);
+  color: var(--blanco);
+  border-bottom: 2px solid var(--azul-cian);
+}
+
+.cabecera-pagina {
+  background: linear-gradient(135deg, var(--azul-nocturno) 0%, var(--azul-abisal) 100%);
+  color: var(--blanco);
+  padding: 6.5rem 1.5rem 3.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--azul-oceano);
+}
+
+.contenedor-cabecera {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.titulo-pagina {
+  font-size: 2.2rem;
+  color: var(--azul-hielo);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.descripcion-pagina {
+  font-size: 1.1rem;
+  color: var(--gris-azulado);
+  font-weight: 300;
+}
+
+.contenido-principal {
+  padding: 3.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-formulario {
+  width: 100%;
+  max-width: 720px;
+}
+
+.seccion-registro {
+  background-color: var(--blanco);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  border-top: 5px solid var(--azul-cian);
+  box-shadow: 0 10px 30px rgba(2, 44, 56, 0.08);
+}
+
+.titulo-formulario {
+  color: var(--azul-abisal);
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+.titulo-formulario::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: var(--azul-cian);
+  border-radius: 2px;
+}
+
+.formulario-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.grupo-campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.etiqueta-campo {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--azul-abisal);
+}
+.campo-nombre,
+.campo-correo,
+.campo-contrasena,
+.campo-seleccion-perfil,
+.campo-motivacion {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--azul-hielo);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: var(--fuente-principal);
+  color: var(--texto-oscuro);
+  background-color: #FAFDFE;
+  transition: all 0.3s ease;
+}
+
+.campo-nombre:focus,
+.campo-correo:focus,
+.campo-contrasena:focus,
+.campo-seleccion-perfil:focus,
+.campo-motivacion:focus {
+  outline: none;
+  border-color: var(--azul-oceano);
+  background-color: var(--blanco);
+  box-shadow: 0 0 0 3px rgba(78, 157, 190, 0.25);
+}
+
+.campo-motivacion {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.grupo-modalidad-participacion,
+.grupo-areas-interes {
+  border: 1.5px dashed var(--azul-hielo);
+  padding: 1.2rem 1.4rem;
+  border-radius: 8px;
+  background-color: #F8FCFD;
+  margin-top: 0.3rem;
+}
+
+.etiqueta-modalidad,
+.etiqueta-areas-interes {
+  font-weight: 600;
+  color: var(--azul-abisal);
+  padding: 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.opcion-modalidad,
+.opcion-area-interes {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.opcion-modalidad label,
+.opcion-area-interes label {
+  font-size: 0.95rem;
+  color: var(--texto-oscuro);
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--azul-oceano);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.grupo-aceptacion-terminos {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.8rem 0;
+}
+
+.etiqueta-terminos {
+  font-size: 0.9rem;
+  color: var(--azul-abisal);
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.grupo-boton-envio {
+  margin-top: 0.5rem;
+}
+
+.boton-completar-registro {
+  width: 100%;
+  padding: 0.95rem;
+  background-color: var(--azul-oceano);
+  color: var(--blanco);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 80, 108, 0.25);
+}
+
+.boton-completar-registro:hover {
+  background-color: var(--azul-abisal);
+  border-bottom: 3px solid var(--azul-cian);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(1, 6, 44, 0.3);
+}
+
+.boton-completar-registro:active {
+  transform: translateY(0);
+}
+
+.pie-pagina {
+  background-color: var(--azul-nocturno);
+  color: var(--blanco);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+  border-top: 3px solid var(--azul-cian);
+}
+
+.contenedor-pie-pagina {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nombre-institucion {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--azul-hielo);
+}
+
+.mensaje-conservacion {
+  font-size: 0.85rem;
+  color: var(--gris-azulado);
+}
+
+@media (max-width: 768px) {
+  .boton-abrir-menu {
+    display: block;
+  }
+
+  .lista-enlaces-navegacion {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--azul-nocturno);
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid var(--azul-cian);
+  }
+
+  .titulo-pagina {
+    font-size: 1.7rem;
+  }
+
+  .seccion-registro {
+    padding: 1.8rem 1.2rem;
+  }
+}

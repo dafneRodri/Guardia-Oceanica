@@ -1,17 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <title>Catálogo de Especies Marinas | Guardia Oceánica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="barra-navegacion">
+        <div class="contenedor-navegacion">
+            <a class="enlace-marca-sitio" href="index.html">
+                Guardia Oceánica
+            </a>
+
+            <button class="boton-abrir-menu" type="button"
+                aria-label="Abrir menú de navegación">
+                <span class="icono-menu-navegacion"></span>
+            </button>
+
+            <div class="contenedor-menu-navegacion" id="menuNavegacion">
+                <ul class="lista-enlaces-navegacion">
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="index.html">Inicio</a>
+                    </li>
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="especies.html" aria-current="page">Especies</a>
+                    </li>
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="conservacion.html">Conservación</a>
+                    </li>
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="voluntariado.html">Voluntariado</a>
+                    </li>
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="elemento-lista-navegacion">
+                        <a class="enlace-navegacion" href="contacto.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="encabezado-pagina">
         <h1>Catálogo de Especies Marinas</h1>
         <p>
-            Conoce la diversidad de animales y organismos que habitan
-            los océanos y descubre por qué es importante protegerlos.
+            Conoce la diversidad de animales y organismos que habitan los océanos y descubre por qué es importante protegerlos.
         </p>
     </header>
 
@@ -21,320 +60,312 @@
             <h2>Tortugas marinas</h2>
 
             <p>
-                Las tortugas marinas son reptiles que pasan la mayor parte
-                de su vida en el océano. Contribuyen al equilibrio de los
-                ecosistemas y algunas ayudan a mantener saludables los
-                pastos marinos y los arrecifes.
+                Las tortugas marinas son reptiles que pasan la mayor parte de su vida en el océano. Contribuyen al equilibrio de los ecosistemas y algunas ayudan a mantener saludables los pastos marinos y los arrecifes.
             </p>
 
-            <article class="especie-marina">
-                <h3>Tortuga verde</h3>
-                <p>
-                    Nombre científico: Chelonia mydas.
-                    Se alimenta principalmente de pastos marinos y algas
-                    cuando es adulta. Ayuda a mantener saludables las
-                    praderas submarinas.
-                </p>
-                <img src="img/tortuga-verde.webp" alt="Tortuga verde">
-            </article>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <article class="especie-marina">
-                <h3>Tortuga carey</h3>
-                <p>
-                    Nombre científico: Eretmochelys imbricata.
-                    Tiene un pico estrecho que le permite alimentarse
-                    entre las grietas de los arrecifes. Consume esponjas
-                    y otros organismos marinos.
-                </p>
-                <img src="img/tortuga-carey.webp" alt="Tortuga carey">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga verde</h3>
+                    <p>
+                        Nombre científico: Chelonia mydas.<br>
+                        Se alimenta principalmente de pastos marinos y algas cuando es adulta. Ayuda a mantener saludables las praderas submarinas.
+                    </p>
+                    <img src="img/tortuga-verde.webp" alt="Tortuga verde">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Tortuga caguama</h3>
-                <p>
-                    Nombre científico: Caretta caretta.
-                    Posee una cabeza grande y mandíbulas fuertes.
-                    Se alimenta de crustáceos, moluscos y otros animales
-                    que encuentra en el fondo marino.
-                </p>
-                <img src="img/tortuga-caguama.webp" alt="Tortuga caguama">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga carey</h3>
+                    <p>
+                        Nombre científico: Eretmochelys imbricata.<br>
+                        Tiene un pico estrecho que le permite alimentarseentre las grietas de los arrecifes. Consume esponjas y otros organismos marinos.
+                    </p>
+                    <img src="img/tortuga-carey.webp" alt="Tortuga carey">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Tortuga laúd</h3>
-                <p>
-                    Nombre científico: Dermochelys coriacea.
-                    Es la tortuga marina más grande que existe.
-                    Su caparazón tiene una estructura flexible y se
-                    alimenta principalmente de medusas.
-                </p>
-                <img src="img/tortuga-laud.webp" alt="Tortuga laúd">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga caguama</h3>
+                    <p>
+                        Nombre científico: Caretta caretta.<br>
+                        Posee una cabeza grande y mandíbulas fuertes.<br>
+                        Se alimenta de crustáceos, moluscos y otros animalesque encuentra en el fondo marino.
+                    </p>
+                    <img src="img/tortuga-caguama.webp" alt="Tortuga caguama">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Tortuga lora</h3>
-                <p>
-                    Nombre científico: Lepidochelys kempii.
-                    Es una tortuga marina pequeña que se alimenta de
-                    cangrejos y otros invertebrados. Sus principales
-                    zonas de anidación se encuentran en el golfo de México.
-                </p>
-                <img src="img/tortuga-lora.webp" alt="Tortuga lora">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga laúd</h3>
+                    <p>
+                        Nombre científico: Dermochelys coriacea.<br>
+                        Es la tortuga marina más grande que existe.<br>
+                        Su caparazón tiene una estructura flexible y se alimenta principalmente de medusas.
+                    </p>
+                    <img src="img/tortuga-laud.webp" alt="Tortuga laúd">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Tortuga golfina</h3>
-                <p>
-                    Nombre científico: Lepidochelys olivacea.
-                    Es conocida por sus anidaciones masivas en algunas
-                    playas. Su alimentación incluye crustáceos, peces
-                    y otros organismos marinos.
-                </p>
-                <img src="img/tortuga-golfina.webp" alt="Tortuga golfina">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga lora</h3>
+                    <p>
+                        Nombre científico: Lepidochelys kempii.<br>
+                        Es una tortuga marina pequeña que se alimenta de cangrejos y otros invertebrados. Sus principales zonas de anidación se encuentran en el golfo de México.
+                    </p>
+                    <img src="img/tortuga-lora.webp" alt="Tortuga lora">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Tortuga plana</h3>
-                <p>
-                    Nombre científico: Natator depressus.
-                    Habita principalmente aguas de Australia y sus
-                    alrededores. Tiene un caparazón relativamente plano
-                    y se alimenta de organismos marinos de cuerpo blando,
-                    crustáceos y otros animales pequeños.
-                </p>
-                <img src="img/tortuga-plana.webp" alt="Tortuga plana">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Tortuga golfina</h3>
+                    <p>
+                        Nombre científico: Lepidochelys olivacea.<br>
+                        Es conocida por sus anidaciones masivas en algunas playas. Su alimentación incluye crustáceos, peces y otros organismos marinos.
+                    </p>
+                    <img src="img/tortuga-golfina.webp" alt="Tortuga golfina">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tortuga plana</h3>
+                    <p>
+                        Nombre científico: Natator depressus.<br>
+                        Habita principalmente aguas de Australia y sus alrededores. Tiene un caparazón relativamente plano y se alimenta de organismos marinos de cuerpo blando, crustáceos y otros animales pequeños.
+                    </p>
+                    <img src="img/tortuga-plana.webp" alt="Tortuga plana">
+                </article>
+
+            </div>
         </section>
 
         <section class="apartado-delfines">
             <h2>Delfines</h2>
+
             <p>
                 Los delfines son mamíferos marinos que respiran aire,
-                cuidan a sus crías y utilizan sonidos para comunicarse.
+                cuidan a sus crías y utilizan sonidos para comunicarse.<br>
                 Muchas especies viven en grupos y emplean la ecolocalización
                 para orientarse y encontrar alimento.
             </p>
 
-            <article class="especie-marina">
-                <h3>Delfín nariz de botella</h3>
-                <p>
-                    Nombre científico: Tursiops truncatus.
-                    Es uno de los delfines más conocidos. Habita mares
-                    tropicales y templados, y se alimenta de peces y calamares.
-                </p>
-                <img src="img/delfin-nariz-de-botella.webp" alt="Delfín nariz de botella">
-            </article>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <article class="especie-marina">
-                <h3>Delfín común de hocico corto</h3>
-                <p>
-                    Nombre científico: Delphinus delphis.
-                    Tiene un patrón de colores que puede formar una figura
-                    parecida a un reloj de arena en sus costados. Suele
-                    desplazarse en grupos numerosos.
-                </p>
-                <img src="img/delfin-comun-hocico-corto.webp" alt="Delfín común de hocico corto">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín nariz de botella</h3>
+                    <p>
+                        Nombre científico: Tursiops truncatus.<br>
+                        Es uno de los delfines más conocidos. Habita mares tropicales y templados, y se alimenta de peces y calamares.
+                    </p>
+                    <img src="img/delfin-nariz-de-botella.webp" alt="Delfín nariz de botella">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín común de hocico largo</h3>
-                <p>
-                    Nombre científico: Delphinus capensis.
-                    Presenta un hocico alargado y vive en distintas regiones
-                    oceánicas. Se alimenta principalmente de peces y calamares.
-                </p>
-                <img src="img/delfin-comun-hocico-largo.webp" alt="Delfín común de hocico largo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín común de hocico corto</h3>
+                    <p>
+                        Nombre científico: Delphinus delphis.<br>
+                        Tiene un patrón de colores que puede formar una figura
+                        parecida a un reloj de arena en sus costados. Suele
+                        desplazarse en grupos numerosos.
+                    </p>
+                    <img src="img/delfin-comun-hocico-corto.webp" alt="Delfín común de hocico corto">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín girador</h3>
-                <p>
-                    Nombre científico: Stenella longirostris.
-                    Es conocido por sus saltos y giros fuera del agua.
-                    Habita principalmente aguas tropicales y suele formar
-                    grupos grandes.
-                </p>
-                <img src="img/delfin-girador.webp" alt="Delfín girador">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín común de hocico largo</h3>
+                    <p>
+                        Nombre científico: Delphinus capensis.<br>
+                        Presenta un hocico alargado y vive en distintas regiones
+                        oceánicas. Se alimenta principalmente de peces y calamares.
+                    </p>
+                    <img src="img/delfin-comun-hocico-largo.webp" alt="Delfín común de hocico largo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín moteado del Atlántico</h3>
-                <p>
-                    Nombre científico: Stenella frontalis.
-                    Los adultos desarrollan manchas en el cuerpo.
-                    Vive en aguas cálidas del océano Atlántico.
-                </p>
-                <img src="img/delfin-moteado-atlantico.webp" alt="Delfín moteado del Atlántico">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín girador</h3>
+                    <p>
+                        Nombre científico: Stenella longirostris.<br>
+                        Es conocido por sus saltos y giros fuera del agua.
+                        Habita principalmente aguas tropicales y suele formar
+                        grupos grandes.
+                    </p>
+                    <img src="img/delfin-girador.webp" alt="Delfín girador">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín moteado pantropical</h3>
-                <p>
-                    Nombre científico: Stenella attenuata.
-                    Habita aguas tropicales y subtropicales de diferentes
-                    océanos. Se alimenta de peces y calamares.
-                </p>
-                <img src="img/delfin-moteado-pantropical.webp" alt="Delfín moteado pantropical">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín moteado del Atlántico</h3>
+                    <p>
+                        Nombre científico: Stenella frontalis.<br>
+                        Los adultos desarrollan manchas en el cuerpo.<br>
+                        Vive en aguas cálidas del océano Atlántico.
+                    </p>
+                    <img src="img/delfin-moteado-atlantico.webp" alt="Delfín moteado del Atlántico">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín listado</h3>
-                <p>
-                    Nombre científico: Stenella coeruleoalba.
-                    Presenta líneas oscuras en los costados que se extienden
-                    desde la zona de los ojos. Habita principalmente aguas
-                    templadas y cálidas.
-                </p>
-                <img src="img/delfin-listado.webp" alt="Delfín listado">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín moteado pantropical</h3>
+                    <p>
+                        Nombre científico: Stenella attenuata.<br>
+                        Habita aguas tropicales y subtropicales de diferentes
+                        océanos. Se alimenta de peces y calamares.
+                    </p>
+                    <img src="img/delfin-moteado-pantropical.webp" alt="Delfín moteado pantropical">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de Risso</h3>
-                <p>
-                    Nombre científico: Grampus griseus.
-                    Su cuerpo puede desarrollar numerosas cicatrices claras
-                    con el paso del tiempo. Se alimenta principalmente
-                    de calamares.
-                </p>
-                <img src="img/delfin-risso.webp" alt="Delfín de Risso">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín listado</h3>
+                    <p>
+                        Nombre científico: Stenella coeruleoalba.<br>
+                        Presenta líneas oscuras en los costados que se extienden
+                        desde la zona de los ojos. Habita principalmente aguas
+                        templadas y cálidas.
+                    </p>
+                    <img src="img/delfin-listado.webp" alt="Delfín listado">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de Fraser</h3>
-                <p>
-                    Nombre científico: Lagenodelphis hosei.
-                    Tiene un cuerpo robusto y marcas oscuras en los costados.
-                    Habita aguas tropicales profundas y suele desplazarse
-                    en grupos.
-                </p>
-                <img src="img/delfin-fraser.webp" alt="Delfín de Fraser">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de Risso</h3>
+                    <p>
+                        Nombre científico: Grampus griseus.<br>
+                        Su cuerpo puede desarrollar numerosas cicatrices claras
+                        con el paso del tiempo. Se alimenta principalmente
+                        de calamares.
+                    </p>
+                    <img src="img/delfin-risso.webp" alt="Delfín de Risso">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de dientes rugosos</h3>
-                <p>
-                    Nombre científico: Steno bredanensis.
-                    Se distingue por su cabeza cónica y los surcos de sus
-                    dientes. Habita aguas tropicales y subtropicales.
-                </p>
-                <img src="img/delfin-dientes-rugosos.webp" alt="Delfín de dientes rugosos">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de Fraser</h3>
+                    <p>
+                        Nombre científico: Lagenodelphis hosei.<br>
+                        Tiene un cuerpo robusto y marcas oscuras en los costados.
+                        Habita aguas tropicales profundas y suele desplazarse
+                        en grupos.
+                    </p>
+                    <img src="img/delfin-fraser.webp" alt="Delfín de Fraser">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de Héctor</h3>
-                <p>
-                    Nombre científico: Cephalorhynchus hectori.
-                    Es uno de los delfines más pequeños del mundo.
-                    Habita aguas costeras de Nueva Zelanda.
-                </p>
-                <img src="img/delfin-hector.webp" alt="Delfín de Héctor">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de dientes rugosos</h3>
+                    <p>
+                        Nombre científico: Steno bredanensis.<br>
+                        Se distingue por su cabeza cónica y los surcos de sus
+                        dientes. Habita aguas tropicales y subtropicales.
+                    </p>
+                    <img src="img/delfin-dientes-rugosos.webp" alt="Delfín de dientes rugosos">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín chileno</h3>
-                <p>
-                    Nombre científico: Cephalorhynchus eutropia.
-                    Vive en aguas costeras de Chile y suele encontrarse
-                    cerca de estuarios y canales.
-                </p>
-                <img src="img/delfin-chileno.webp" alt="Delfín chileno">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de Héctor</h3>
+                    <p>
+                        Nombre científico: Cephalorhynchus hectori.<br>
+                        Es uno de los delfines más pequeños del mundo.<br>
+                        Habita aguas costeras de Nueva Zelanda.
+                    </p>
+                    <img src="img/delfin-hector.webp" alt="Delfín de Héctor">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de Commerson</h3>
-                <p>
-                    Nombre científico: Cephalorhynchus commersonii.
-                    Su cuerpo presenta manchas blancas y negras muy
-                    características. Habita aguas frías del hemisferio sur.
-                </p>
-                <img src="img/delfin-commerson.webp" alt="Delfín de Commerson">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín chileno</h3>
+                    <p>
+                        Nombre científico: Cephalorhynchus eutropia.<br>
+                        Vive en aguas costeras de Chile y suele encontrarse
+                        cerca de estuarios y canales.
+                    </p>
+                    <img src="img/delfin-chileno.webp" alt="Delfín chileno">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín jorobado del Indo-Pacífico</h3>
-                <p>
-                    Nombre científico: Sousa chinensis.
-                    Habita zonas costeras del océano Índico y del Pacífico
-                    occidental. Algunas poblaciones presentan una tonalidad
-                    rosada en la piel.
-                </p>
-                <img src="img/delfin-jorobado-indo-pacifico.webp" alt="Delfín jorobado del Indo-Pacífico">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de Commerson</h3>
+                    <p>
+                        Nombre científico: Cephalorhynchus commersonii.<br>
+                        Su cuerpo presenta manchas blancas y negras muy
+                        características. Habita aguas frías del hemisferio sur.
+                    </p>
+                    <img src="img/delfin-commerson.webp" alt="Delfín de Commerson">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín jorobado del Atlántico</h3>
-                <p>
-                    Nombre científico: Sousa teuszii.
-                    Vive en aguas costeras de África occidental.
-                    Depende de hábitats cercanos a la costa y los estuarios.
-                </p>
-                <img src="img/delfin-jorobado-atlantico.webp" alt="Delfín jorobado del Atlántico">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín jorobado del Indo-Pacífico</h3>
+                    <p>
+                        Nombre científico: Sousa chinensis.<br>
+                        Habita zonas costeras del océano Índico y del Pacífico
+                        occidental. Algunas poblaciones presentan una tonalidad
+                        rosada en la piel.
+                    </p>
+                    <img src="img/delfin-jorobado-indo-pacifico.webp" alt="Delfín jorobado del Indo-Pacífico">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de río del Amazonas</h3>
-                <p>
-                    Nombre científico: Inia geoffrensis.
-                    También es conocido como boto. Habita ríos y zonas
-                    inundables de Sudamérica, donde se orienta en aguas
-                    que pueden ser turbias.
-                </p>
-                <img src="img/delfin-amazonas.webp" alt="Delfín del río Amazonas">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín jorobado del Atlántico</h3>
+                    <p>
+                        Nombre científico: Sousa teuszii.<br>
+                        Vive en aguas costeras de África occidental.<br>
+                        Depende de hábitats cercanos a la costa y los estuarios.
+                    </p>
+                    <img src="img/delfin-jorobado-atlantico.webp" alt="Delfín jorobado del Atlántico">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín del río Ganges</h3>
-                <p>
-                    Nombre científico: Platanista gangetica.
-                    Vive en sistemas fluviales del sur de Asia.
-                    Utiliza la ecolocalización para localizar a sus presas
-                    en aguas con poca visibilidad.
-                </p>
-                <img src="img/delfin-ganges.webp" alt="Delfín del río Ganges">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de río del Amazonas</h3>
+                    <p>
+                        Nombre científico: Inia geoffrensis.<br>
+                        También es conocido como boto. Habita ríos y zonas
+                        inundables de Sudamérica, donde se orienta en aguas
+                        que pueden ser turbias.
+                    </p>
+                    <img src="img/delfin-amazonas.webp" alt="Delfín del río Amazonas">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín del río Indo</h3>
-                <p>
-                    Nombre científico: Platanista minor.
-                    Habita el sistema del río Indo. Su supervivencia depende
-                    de la conservación del caudal y de la calidad del agua.
-                </p>
-                <img src="img/delfin-indo.webp" alt="Delfín del río Indo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín del río Ganges</h3>
+                    <p>
+                        Nombre científico: Platanista gangetica.<br>
+                        Vive en sistemas fluviales del sur de Asia.<br>
+                        Utiliza la ecolocalización para localizar a sus presas
+                        en aguas con poca visibilidad.
+                    </p>
+                    <img src="img/delfin-ganges.webp" alt="Delfín del río Ganges">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín jorobado australiano</h3>
-                <p>
-                    Nombre científico: Sousa sahulensis.
-                    Habita aguas costeras del norte de Australia y regiones
-                    cercanas. Busca alimento en ambientes poco profundos.
-                </p>
-                <img src="img/delfin-jorobado-australiano.webp" alt="Delfín jorobado australiano">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín del río Indo</h3>
+                    <p>
+                        Nombre científico: Platanista minor.<br>
+                        Habita el sistema del río Indo. Su supervivencia depende
+                        de la conservación del caudal y de la calidad del agua.
+                    </p>
+                    <img src="img/delfin-indo.webp" alt="Delfín del río Indo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Delfín de dientes anchos</h3>
-                <p>
-                    Nombre científico: Peponocephala electra.
-                    También se conoce como calderón pequeño de cabeza
-                    melón. Es un cetáceo de cuerpo oscuro que suele
-                    desplazarse en grupos numerosos.
-                </p>
-                <img src="img/delfin-dientes-anchos.webp" alt="Delfín de dientes anchos">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín jorobado australiano</h3>
+                    <p>
+                        Nombre científico: Sousa sahulensis.<br>
+                        Habita aguas costeras del norte de Australia y regiones
+                        cercanas. Busca alimento en ambientes poco profundos.
+                    </p>
+                    <img src="img/delfin-jorobado-australiano.webp" alt="Delfín jorobado australiano">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Orca</h3>
-                <p>
-                    Nombre científico: Orcinus orca.
-                    Aunque se conoce como ballena asesina, pertenece a la
-                    familia de los delfines y es su miembro de mayor tamaño.
-                    Se alimenta de peces y, según la población, de otros
-                    mamíferos marinos.
-                </p>
-                <img src="img/orca.webp" alt="Orca">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Delfín de dientes anchos</h3>
+                    <p>
+                        Nombre científico: Peponocephala electra.<br>
+                        También se conoce como calderón pequeño de cabeza
+                        melón. Es un cetáceo de cuerpo oscuro que suele
+                        desplazarse en grupos numerosos.
+                    </p>
+                    <img src="img/delfin-dientes-anchos.webp" alt="Delfín de dientes anchos">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Orca</h3>
+                    <p>
+                        Nombre científico: Orcinus orca.<br>
+                        Aunque se conoce como ballena asesina, pertenece a la
+                        familia de los delfines y es su miembro de mayor tamaño.<br>
+                        Se alimenta de peces y, según la población, de otros
+                        mamíferos marinos.
+                    </p>
+                    <img src="img/orca.webp" alt="Orca">
+                </article>
+
+            </div>
         </section>
 
         <section class="apartado-corales">
@@ -343,303 +374,307 @@
             <p>
                 Los corales son animales que pueden vivir individualmente
                 o formar colonias. Muchos construyen estructuras de
-                carbonato de calcio que, con el tiempo, forman arrecifes.
+                carbonato de calcio que, con el tiempo, forman arrecifes.<br>
                 Estos ecosistemas proporcionan refugio y alimento a una
                 enorme variedad de organismos marinos.
             </p>
 
-            <article class="especie-marina">
-                <h3>Coral cuerno de alce</h3>
-                <p>
-                    Nombre científico: Acropora palmata.
-                    Forma ramas anchas que recuerdan los cuernos de un alce.
-                    Es importante para la estructura de los arrecifes
-                    del Caribe.
-                </p>
-                <img src="img/coral-cuerno-alce.webp" alt="Coral cuerno de alce">
-            </article>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <article class="especie-marina">
-                <h3>Coral cuerno de ciervo</h3>
-                <p>
-                    Nombre científico: Acropora cervicornis.
-                    Sus ramas delgadas ofrecen refugio a peces pequeños
-                    y otros animales. Puede formar zonas densas de coral.
-                </p>
-                <img src="img/coral-cuerno-ciervo.webp" alt="Coral cuerno de ciervo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cuerno de alce</h3>
+                    <p>
+                        Nombre científico: Acropora palmata.<br>
+                        Forma ramas anchas que recuerdan los cuernos de un alce.<br>
+                        Es importante para la estructura de los arrecifes
+                        del Caribe.
+                    </p>
+                    <img src="img/coral-cuerno-alce.webp" alt="Coral cuerno de alce">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral estrella montañoso</h3>
-                <p>
-                    Nombre científico: Orbicella faveolata.
-                    Forma colonias grandes y resistentes que contribuyen
-                    a la estructura de los arrecifes caribeños.
-                </p>
-                <img src="img/coral-estrella-montanoso.webp" alt="Coral estrella montañoso">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cuerno de ciervo</h3>
+                    <p>
+                        Nombre científico: Acropora cervicornis.<br>
+                        Sus ramas delgadas ofrecen refugio a peces pequeños
+                        y otros animales. Puede formar zonas densas de coral.
+                    </p>
+                    <img src="img/coral-cuerno-ciervo.webp" alt="Coral cuerno de ciervo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral estrella masivo</h3>
-                <p>
-                    Nombre científico: Orbicella annularis.
-                    Desarrolla colonias de formas redondeadas o lobuladas.
-                    Proporciona una superficie sólida dentro del arrecife.
-                </p>
-                <img src="img/coral-estrella-masivo.webp" alt="Coral estrella masivo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral estrella montañoso</h3>
+                    <p>
+                        Nombre científico: Orbicella faveolata.<br>
+                        Forma colonias grandes y resistentes que contribuyen
+                        a la estructura de los arrecifes caribeños.
+                    </p>
+                    <img src="img/coral-estrella-montanoso.webp" alt="Coral estrella montañoso">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral estrella de roca</h3>
-                <p>
-                    Nombre científico: Montastraea cavernosa.
-                    Puede formar colonias grandes y presentar pólipos
-                    relativamente prominentes. Habita distintos ambientes
-                    de arrecife.
-                </p>
-                <img src="img/coral-estrella-roca.webp" alt="Coral estrella de roca">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral estrella masivo</h3>
+                    <p>
+                        Nombre científico: Orbicella annularis.
+                        Desarrolla colonias de formas redondeadas o lobuladas.
+                        Proporciona una superficie sólida dentro del arrecife.
+                    </p>
+                    <img src="img/coral-estrella-masivo.webp" alt="Coral estrella masivo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro estriado</h3>
-                <p>
-                    Nombre científico: Diploria labyrinthiformis.
-                    Su superficie presenta surcos que recuerdan los pliegues
-                    de un cerebro. Es un coral constructor de arrecifes.
-                </p>
-                <img src="img/coral-cerebro-estriado.webp" alt="Coral cerebro estriado">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral estrella de roca</h3>
+                    <p>
+                        Nombre científico: Montastraea cavernosa.
+                        Puede formar colonias grandes y presentar pólipos
+                        relativamente prominentes. Habita distintos ambientes
+                        de arrecife.
+                    </p>
+                    <img src="img/coral-estrella-roca.webp" alt="Coral estrella de roca">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro gigante</h3>
-                <p>
-                    Nombre científico: Colpophyllia natans.
-                    Forma colonias grandes con surcos sinuosos.
-                    Sirve como refugio para diversos organismos del arrecife.
-                </p>
-                <img src="img/coral-cerebro-gigante.webp" alt="Coral cerebro gigante">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro estriado</h3>
+                    <p>
+                        Nombre científico: Diploria labyrinthiformis.
+                        Su superficie presenta surcos que recuerdan los pliegues
+                        de un cerebro. Es un coral constructor de arrecifes.
+                    </p>
+                    <img src="img/coral-cerebro-estriado.webp" alt="Coral cerebro estriado">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro simétrico</h3>
-                <p>
-                    Nombre científico: Pseudodiploria strigosa.
-                    Sus colonias presentan surcos ondulados y pueden
-                    cubrir superficies extensas del fondo marino.
-                </p>
-                <img src="img/coral-cerebro-simetrico.webp" alt="Coral cerebro simétrico">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro gigante</h3>
+                    <p>
+                        Nombre científico: Colpophyllia natans.
+                        Forma colonias grandes con surcos sinuosos.
+                        Sirve como refugio para diversos organismos del arrecife.
+                    </p>
+                    <img src="img/coral-cerebro-gigante.webp" alt="Coral cerebro gigante">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral de montaña</h3>
-                <p>
-                    Nombre científico: Orbicella faveolata.
-                    Desarrolla colonias masivas que contribuyen a la
-                    formación de arrecifes. Es sensible al deterioro
-                    de las condiciones ambientales.
-                </p>
-                <img src="img/coral-montana.webp" alt="Coral de montaña">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro simétrico</h3>
+                    <p>
+                        Nombre científico: Pseudodiploria strigosa.
+                        Sus colonias presentan surcos ondulados y pueden
+                        cubrir superficies extensas del fondo marino.
+                    </p>
+                    <img src="img/coral-cerebro-simetrico.webp" alt="Coral cerebro simétrico">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral lechuga</h3>
-                <p>
-                    Nombre científico: Agaricia agaricites.
-                    Sus láminas y formas onduladas recuerdan las hojas
-                    de una lechuga. Puede crecer en diferentes zonas
-                    de los arrecifes tropicales.
-                </p>
-                <img src="img/coral-lechuga.webp" alt="Coral lechuga">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral de montaña</h3>
+                    <p>
+                        Nombre científico: Orbicella faveolata.
+                        Desarrolla colonias masivas que contribuyen a la
+                        formación de arrecifes. Es sensible al deterioro
+                        de las condiciones ambientales.
+                    </p>
+                    <img src="img/coral-montana.webp" alt="Coral de montaña">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral de fuego</h3>
-                <p>
-                    Nombre científico: Millepora alcicornis.
-                    Aunque parece un coral, pertenece a un grupo diferente
-                    de animales marinos. Forma estructuras ramificadas
-                    y posee células urticantes.
-                </p>
-                <img src="img/coral-fuego.webp" alt="Coral de fuego">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral lechuga</h3>
+                    <p>
+                        Nombre científico: Agaricia agaricites.
+                        Sus láminas y formas onduladas recuerdan las hojas
+                        de una lechuga. Puede crecer en diferentes zonas
+                        de los arrecifes tropicales.
+                    </p>
+                    <img src="img/coral-lechuga.webp" alt="Coral lechuga">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cuerno de ciervo ramificado</h3>
-                <p>
-                    Nombre científico: Pocillopora damicornis.
-                    Forma colonias ramificadas que sirven de refugio
-                    a pequeños peces e invertebrados en arrecifes
-                    tropicales del Indo-Pacífico.
-                </p>
-                <img src="img/coral-ramificado.webp" alt="Coral ramificado">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral de fuego</h3>
+                    <p>
+                        Nombre científico: Millepora alcicornis.
+                        Aunque parece un coral, pertenece a un grupo diferente
+                        de animales marinos. Forma estructuras ramificadas
+                        y posee células urticantes.
+                    </p>
+                    <img src="img/coral-fuego.webp" alt="Coral de fuego">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral coliflor</h3>
-                <p>
-                    Nombre científico: Pocillopora verrucosa.
-                    Sus ramas tienen pequeñas protuberancias que le dan
-                    una apariencia similar a una coliflor.
-                </p>
-                <img src="img/coral-coliflor.webp" alt="Coral coliflor">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cuerno de ciervo ramificado</h3>
+                    <p>
+                        Nombre científico: Pocillopora damicornis.
+                        Forma colonias ramificadas que sirven de refugio
+                        a pequeños peces e invertebrados en arrecifes
+                        tropicales del Indo-Pacífico.
+                    </p>
+                    <img src="img/coral-ramificado.webp" alt="Coral ramificado">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral de dedos</h3>
-                <p>
-                    Nombre científico: Porites porites.
-                    Forma ramas alargadas parecidas a dedos.
-                    Puede contribuir a la estructura de los arrecifes
-                    de aguas tropicales.
-                </p>
-                <img src="img/coral-dedos.webp" alt="Coral de dedos">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral coliflor</h3>
+                    <p>
+                        Nombre científico: Pocillopora verrucosa.
+                        Sus ramas tienen pequeñas protuberancias que le dan
+                        una apariencia similar a una coliflor.
+                    </p>
+                    <img src="img/coral-coliflor.webp" alt="Coral coliflor">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro abierto</h3>
-                <p>
-                    Nombre científico: Trachyphyllia geoffroyi.
-                    Es un coral de pólipo grande que suele vivir sobre
-                    fondos arenosos o entre otros organismos del arrecife.
-                </p>
-                <img src="img/coral-cerebro-abierto.webp" alt="Coral cerebro abierto">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral de dedos</h3>
+                    <p>
+                        Nombre científico: Porites porites.
+                        Forma ramas alargadas parecidas a dedos.
+                        Puede contribuir a la estructura de los arrecifes
+                        de aguas tropicales.
+                    </p>
+                    <img src="img/coral-dedos.webp" alt="Coral de dedos">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral elegante</h3>
-                <p>
-                    Nombre científico: Catalaphyllia jardinei.
-                    Tiene tentáculos largos y ondulados. Vive en zonas
-                    del Indo-Pacífico y puede encontrarse en fondos
-                    arenosos cercanos a arrecifes.
-                </p>
-                <img src="img/coral-elegante.webp" alt="Coral elegante">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro abierto</h3>
+                    <p>
+                        Nombre científico: Trachyphyllia geoffroyi.
+                        Es un coral de pólipo grande que suele vivir sobre
+                        fondos arenosos o entre otros organismos del arrecife.
+                    </p>
+                    <img src="img/coral-cerebro-abierto.webp" alt="Coral cerebro abierto">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral de placa</h3>
-                <p>
-                    Nombre científico: Fungia fungites.
-                    Puede desarrollar una forma aplanada semejante
-                    a un disco. Muchos corales de este grupo viven
-                    separados del sustrato cuando son adultos.
-                </p>
-                <img src="img/coral-placa.webp" alt="Coral de placa">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral elegante</h3>
+                    <p>
+                        Nombre científico: Catalaphyllia jardinei.
+                        Tiene tentáculos largos y ondulados. Vive en zonas
+                        del Indo-Pacífico y puede encontrarse en fondos
+                        arenosos cercanos a arrecifes.
+                    </p>
+                    <img src="img/coral-elegante.webp" alt="Coral elegante">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral martillo</h3>
-                <p>
-                    Nombre científico: Euphyllia ancora.
-                    Sus tentáculos tienen extremos con forma de martillo.
-                    Proporciona refugio a organismos que habitan
-                    los arrecifes tropicales.
-                </p>
-                <img src="img/coral-martillo.webp" alt="Coral martillo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral de placa</h3>
+                    <p>
+                        Nombre científico: Fungia fungites.
+                        Puede desarrollar una forma aplanada semejante
+                        a un disco. Muchos corales de este grupo viven
+                        separados del sustrato cuando son adultos.
+                    </p>
+                    <img src="img/coral-placa.webp" alt="Coral de placa">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral antorcha</h3>
-                <p>
-                    Nombre científico: Euphyllia glabrescens.
-                    Posee tentáculos largos con extremos redondeados.
-                    Se encuentra en ambientes de arrecife del Indo-Pacífico.
-                </p>
-                <img src="img/coral-antorcha.webp" alt="Coral antorcha">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral martillo</h3>
+                    <p>
+                        Nombre científico: Euphyllia ancora.
+                        Sus tentáculos tienen extremos con forma de martillo.
+                        Proporciona refugio a organismos que habitan
+                        los arrecifes tropicales.
+                    </p>
+                    <img src="img/coral-martillo.webp" alt="Coral martillo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral nido de pájaro</h3>
-                <p>
-                    Nombre científico: Seriatopora hystrix.
-                    Sus ramas finas forman estructuras densas parecidas
-                    a un nido. Sirve de refugio a pequeños animales marinos.
-                </p>
-                <img src="img/coral-nido-pajaro.webp" alt="Coral nido de pájaro">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral antorcha</h3>
+                    <p>
+                        Nombre científico: Euphyllia glabrescens.
+                        Posee tentáculos largos con extremos redondeados.
+                        Se encuentra en ambientes de arrecife del Indo-Pacífico.
+                    </p>
+                    <img src="img/coral-antorcha.webp" alt="Coral antorcha">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral lechuga del género Pavona</h3>
-                <p>
-                    Nombre científico: Pavona cactus.
-                    Sus estructuras aplanadas pueden crecer en forma
-                    de láminas y pliegues sobre las superficies arrecifales.
-                </p>
-                <img src="img/coral-lechuga-pavona.webp" alt="Coral lechuga del género Pavona">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral nido de pájaro</h3>
+                    <p>
+                        Nombre científico: Seriatopora hystrix.
+                        Sus ramas finas forman estructuras densas parecidas
+                        a un nido. Sirve de refugio a pequeños animales marinos.
+                    </p>
+                    <img src="img/coral-nido-pajaro.webp" alt="Coral nido de pájaro">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro del género Favia</h3>
-                <p>
-                    Nombre científico: Favia fragum.
-                    Es un coral pétreo que forma pequeñas colonias
-                    redondeadas con estructuras que recuerdan un cerebro.
-                </p>
-                <img src="img/coral-favia.webp" alt="Coral del género Favia">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral lechuga del género Pavona</h3>
+                    <p>
+                        Nombre científico: Pavona cactus.
+                        Sus estructuras aplanadas pueden crecer en forma
+                        de láminas y pliegues sobre las superficies arrecifales.
+                    </p>
+                    <img src="img/coral-lechuga-pavona.webp" alt="Coral lechuga del género Pavona">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral sol</h3>
-                <p>
-                    Nombre científico: Tubastraea coccinea.
-                    Presenta pólipos de colores intensos y no depende
-                    de la luz solar de la misma manera que muchos corales
-                    constructores de arrecifes.
-                </p>
-                <img src="img/coral-sol.webp" alt="Coral sol">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro del género Favia</h3>
+                    <p>
+                        Nombre científico: Favia fragum.
+                        Es un coral pétreo que forma pequeñas colonias
+                        redondeadas con estructuras que recuerdan un cerebro.
+                    </p>
+                    <img src="img/coral-favia.webp" alt="Coral del género Favia">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral cerebro de Duncan</h3>
-                <p>
-                    Nombre científico: Duncanopsammia axifuga.
-                    Posee pólipos grandes y tentáculos visibles.
-                    Vive en ambientes marinos tropicales.
-                </p>
-                <img src="img/coral-duncan.webp" alt="Coral de Duncan">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral sol</h3>
+                    <p>
+                        Nombre científico: Tubastraea coccinea.
+                        Presenta pólipos de colores intensos y no depende
+                        de la luz solar de la misma manera que muchos corales
+                        constructores de arrecifes.
+                    </p>
+                    <img src="img/coral-sol.webp" alt="Coral sol">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral azul</h3>
-                <p>
-                    Nombre científico: Heliopora coerulea.
-                    Es un coral que forma un esqueleto interno azulado.
-                    Habita arrecifes tropicales del Indo-Pacífico.
-                </p>
-                <img src="img/coral-azul.webp" alt="Coral azul">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral cerebro de Duncan</h3>
+                    <p>
+                        Nombre científico: Duncanopsammia axifuga.
+                        Posee pólipos grandes y tentáculos visibles.
+                        Vive en ambientes marinos tropicales.
+                    </p>
+                    <img src="img/coral-duncan.webp" alt="Coral de Duncan">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Gorgonia abanico de mar</h3>
-                <p>
-                    Nombre científico: Gorgonia ventalina.
-                    Forma colonias ramificadas en forma de abanico que
-                    filtran partículas del agua y crean hábitats
-                    para otros organismos.
-                </p>
-                <img src="img/abanico-mar.webp" alt="Abanico de mar">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Coral azul</h3>
+                    <p>
+                        Nombre científico: Heliopora coerulea.
+                        Es un coral que forma un esqueleto interno azulado.
+                        Habita arrecifes tropicales del Indo-Pacífico.
+                    </p>
+                    <img src="img/coral-azul.webp" alt="Coral azul">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Pluma de mar</h3>
-                <p>
-                    Nombre científico: Pseudopterogorgia americana.
-                    Es un coral blando con ramas flexibles. Forma parte
-                    de los ecosistemas arrecifales del Caribe.
-                </p>
-                <img src="img/pluma-mar.webp" alt="Pluma de mar">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Gorgonia abanico de mar</h3>
+                    <p>
+                        Nombre científico: Gorgonia ventalina.
+                        Forma colonias ramificadas en forma de abanico que
+                        filtran partículas del agua y crean hábitats
+                        para otros organismos.
+                    </p>
+                    <img src="img/abanico-mar.webp" alt="Abanico de mar">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Coral de abanico</h3>
-                <p>
-                    Nombre científico: Eunicea flexuosa.
-                    Es un coral blando ramificado que se encuentra
-                    en arrecifes del Caribe y proporciona estructura
-                    a las comunidades marinas.
-                </p>
-                <img src="img/coral-abanico.webp" alt="Coral de abanico">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Pluma de mar</h3>
+                    <p>
+                        Nombre científico: Pseudopterogorgia americana.
+                        Es un coral blando con ramas flexibles. Forma parte
+                        de los ecosistemas arrecifales del Caribe.
+                    </p>
+                    <img src="img/pluma-mar.webp" alt="Pluma de mar">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Coral de abanico</h3>
+                    <p>
+                        Nombre científico: Eunicea flexuosa.
+                        Es un coral blando ramificado que se encuentra
+                        en arrecifes del Caribe y proporciona estructura
+                        a las comunidades marinas.
+                    </p>
+                    <img src="img/coral-abanico.webp" alt="Coral de abanico">
+                </article>
+
+            </div>
         </section>
 
         <section class="apartado-ballenas">
@@ -654,970 +689,974 @@
                 ballena.
             </p>
 
-            <article class="especie-marina">
-                <h3>Ballena azul</h3>
-                <p>
-                    Nombre científico: Balaenoptera musculus.
-                    Es el animal más grande conocido. Se alimenta
-                    principalmente de kril, pequeños crustáceos
-                    que filtra del agua.
-                </p>
-                <img src="img/ballena-azul.jpg" alt="Ballena azul">
-            </article>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <article class="especie-marina">
-                <h3>Ballena de aleta</h3>
-                <p>
-                    Nombre científico: Balaenoptera physalus.
-                    Es una de las ballenas más grandes y rápidas.
-                    Se alimenta de kril y pequeños peces.
-                </p>
-                <img src="img/ballena-aleta.jpg" alt="Ballena de aleta">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena azul</h3>
+                    <p>
+                        Nombre científico: Balaenoptera musculus.
+                        Es el animal más grande conocido. Se alimenta
+                        principalmente de kril, pequeños crustáceos
+                        que filtra del agua.
+                    </p>
+                    <img src="img/ballena-azul.webp" alt="Ballena azul">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena jorobada</h3>
-                <p>
-                    Nombre científico: Megaptera novaeangliae.
-                    Es conocida por sus saltos y sus cantos.
-                    Muchas poblaciones realizan largas migraciones
-                    entre zonas de alimentación y reproducción.
-                </p>
-                <img src="img/ballena-jorobada.jpg" alt="Ballena jorobada">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena de aleta</h3>
+                    <p>
+                        Nombre científico: Balaenoptera physalus.
+                        Es una de las ballenas más grandes y rápidas.
+                        Se alimenta de kril y pequeños peces.
+                    </p>
+                    <img src="img/ballena-aleta.webp" alt="Ballena de aleta">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena gris</h3>
-                <p>
-                    Nombre científico: Eschrichtius robustus.
-                    Se alimenta de pequeños organismos del fondo marino.
-                    Algunas poblaciones realizan migraciones extensas
-                    a lo largo de las costas.
-                </p>
-                <img src="img/ballena-gris.jpg" alt="Ballena gris">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena jorobada</h3>
+                    <p>
+                        Nombre científico: Megaptera novaeangliae.
+                        Es conocida por sus saltos y sus cantos.
+                        Muchas poblaciones realizan largas migraciones
+                        entre zonas de alimentación y reproducción.
+                    </p>
+                    <img src="img/ballena-jorobada.webp" alt="Ballena jorobada">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena minke común</h3>
-                <p>
-                    Nombre científico: Balaenoptera acutorostrata.
-                    Es una ballena relativamente pequeña dentro de
-                    los rorcuales. Se alimenta de peces y kril.
-                </p>
-                <img src="img/ballena-minke-comun.jpg" alt="Ballena minke común">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena gris</h3>
+                    <p>
+                        Nombre científico: Eschrichtius robustus.
+                        Se alimenta de pequeños organismos del fondo marino.
+                        Algunas poblaciones realizan migraciones extensas
+                        a lo largo de las costas.
+                    </p>
+                    <img src="img/ballena-gris.webp" alt="Ballena gris">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena minke antártica</h3>
-                <p>
-                    Nombre científico: Balaenoptera bonaerensis.
-                    Habita principalmente aguas del hemisferio sur
-                    y se alimenta de kril y otros pequeños organismos.
-                </p>
-                <img src="img/ballena-minke-antartica.jpg" alt="Ballena minke antártica">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena minke común</h3>
+                    <p>
+                        Nombre científico: Balaenoptera acutorostrata.
+                        Es una ballena relativamente pequeña dentro de
+                        los rorcuales. Se alimenta de peces y kril.
+                    </p>
+                    <img src="img/ballena-minke-comun.webp" alt="Ballena minke común">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena sei</h3>
-                <p>
-                    Nombre científico: Balaenoptera borealis.
-                    Es una ballena de cuerpo alargado que se alimenta
-                    de pequeños crustáceos y peces que encuentra
-                    en aguas abiertas.
-                </p>
-                <img src="img/ballena-sei.jpg" alt="Ballena sei">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena minke antártica</h3>
+                    <p>
+                        Nombre científico: Balaenoptera bonaerensis.
+                        Habita principalmente aguas del hemisferio sur
+                        y se alimenta de kril y otros pequeños organismos.
+                    </p>
+                    <img src="img/ballena-minke-antartica.webp" alt="Ballena minke antártica">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena de Bryde</h3>
-                <p>
-                    Nombre científico: Balaenoptera edeni.
-                    Vive principalmente en aguas cálidas. Su dieta
-                    incluye peces pequeños y otros organismos marinos.
-                </p>
-                <img src="img/ballena-bryde.jpg" alt="Ballena de Bryde">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena sei</h3>
+                    <p>
+                        Nombre científico: Balaenoptera borealis.
+                        Es una ballena de cuerpo alargado que se alimenta
+                        de pequeños crustáceos y peces que encuentra
+                        en aguas abiertas.
+                    </p>
+                    <img src="img/ballena-sei.webp" alt="Ballena sei">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena de Omura</h3>
-                <p>
-                    Nombre científico: Balaenoptera omurai.
-                    Es una especie de rorcual identificada científicamente
-                    como distinta de otras ballenas similares.
-                    Habita principalmente regiones tropicales y cálidas.
-                </p>
-                <img src="img/ballena-omura.jpg" alt="Ballena de Omura">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena de Bryde</h3>
+                    <p>
+                        Nombre científico: Balaenoptera edeni.
+                        Vive principalmente en aguas cálidas. Su dieta
+                        incluye peces pequeños y otros organismos marinos.
+                    </p>
+                    <img src="img/ballena-bryde.webp" alt="Ballena de Bryde">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena de Rice</h3>
-                <p>
-                    Nombre científico: Balaenoptera ricei.
-                    Es una especie de rorcual del golfo de México.
-                    Su distribución limitada hace especialmente importante
-                    estudiar y proteger su hábitat.
-                </p>
-                <img src="img/ballena-rice.jpg" alt="Ballena de Rice">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena de Omura</h3>
+                    <p>
+                        Nombre científico: Balaenoptera omurai.
+                        Es una especie de rorcual identificada científicamente
+                        como distinta de otras ballenas similares.
+                        Habita principalmente regiones tropicales y cálidas.
+                    </p>
+                    <img src="img/ballena-omura.webp" alt="Ballena de Omura">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena de Groenlandia</h3>
-                <p>
-                    Nombre científico: Balaena mysticetus.
-                    Habita aguas árticas y está adaptada a ambientes
-                    muy fríos. Posee una cabeza grande que le ayuda
-                    a desplazarse entre zonas cubiertas de hielo.
-                </p>
-                <img src="img/ballena-groenlandia.jpg" alt="Ballena de Groenlandia">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena de Rice</h3>
+                    <p>
+                        Nombre científico: Balaenoptera ricei.
+                        Es una especie de rorcual del golfo de México.
+                        Su distribución limitada hace especialmente importante
+                        estudiar y proteger su hábitat.
+                    </p>
+                    <img src="img/ballena-rice.webp" alt="Ballena de Rice">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena franca del Atlántico Norte</h3>
-                <p>
-                    Nombre científico: Eubalaena glacialis.
-                    Es una ballena que se alimenta filtrando pequeños
-                    organismos del agua. Está gravemente amenazada
-                    por las actividades humanas.
-                </p>
-                <img src="img/ballena-franca-atlantico-norte.jpg" alt="Ballena franca del Atlántico Norte">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena de Groenlandia</h3>
+                    <p>
+                        Nombre científico: Balaena mysticetus.
+                        Habita aguas árticas y está adaptada a ambientes
+                        muy fríos. Posee una cabeza grande que le ayuda
+                        a desplazarse entre zonas cubiertas de hielo.
+                    </p>
+                    <img src="img/ballena-groenlandia.webp" alt="Ballena de Groenlandia">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena franca del Pacífico Norte</h3>
-                <p>
-                    Nombre científico: Eubalaena japonica.
-                    Habita el norte del océano Pacífico. Es una especie
-                    poco abundante que necesita amplias zonas marinas
-                    para alimentarse y desplazarse.
-                </p>
-                <img src="img/ballena-franca-pacifico-norte.jpg" alt="Ballena franca del Pacífico Norte">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena franca del Atlántico Norte</h3>
+                    <p>
+                        Nombre científico: Eubalaena glacialis.
+                        Es una ballena que se alimenta filtrando pequeños
+                        organismos del agua. Está gravemente amenazada
+                        por las actividades humanas.
+                    </p>
+                    <img src="img/ballena-franca-atlantico-norte.webp" alt="Ballena franca del Atlántico Norte">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena franca austral</h3>
-                <p>
-                    Nombre científico: Eubalaena australis.
-                    Vive en el hemisferio sur y se acerca a ciertas
-                    costas para reproducirse y cuidar a sus crías.
-                </p>
-                <img src="img/ballena-franca-austral.jpg" alt="Ballena franca austral">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena franca del Pacífico Norte</h3>
+                    <p>
+                        Nombre científico: Eubalaena japonica.
+                        Habita el norte del océano Pacífico. Es una especie
+                        poco abundante que necesita amplias zonas marinas
+                        para alimentarse y desplazarse.
+                    </p>
+                    <img src="img/ballena-franca-pacifico-norte.webp" alt="Ballena franca del Pacífico Norte">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena franca pigmea</h3>
-                <p>
-                    Nombre científico: Caperea marginata.
-                    Es una ballena pequeña y poco conocida que habita
-                    principalmente aguas templadas del hemisferio sur.
-                </p>
-                <img src="img/ballena-franca-pigmea.jpg" alt="Ballena franca pigmea">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena franca austral</h3>
+                    <p>
+                        Nombre científico: Eubalaena australis.
+                        Vive en el hemisferio sur y se acerca a ciertas
+                        costas para reproducirse y cuidar a sus crías.
+                    </p>
+                    <img src="img/ballena-franca-austral.webp" alt="Ballena franca austral">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Cachalote</h3>
-                <p>
-                    Nombre científico: Physeter macrocephalus.
-                    Es un cetáceo dentado que puede realizar inmersiones
-                    profundas para cazar calamares y otros animales.
-                </p>
-                <img src="img/cachalote.jpg" alt="Cachalote">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena franca pigmea</h3>
+                    <p>
+                        Nombre científico: Caperea marginata.
+                        Es una ballena pequeña y poco conocida que habita
+                        principalmente aguas templadas del hemisferio sur.
+                    </p>
+                    <img src="img/ballena-franca-pigmea.webp" alt="Ballena franca pigmea">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Cachalote pigmeo</h3>
-                <p>
-                    Nombre científico: Kogia breviceps.
-                    Es mucho más pequeño que el cachalote común.
-                    Vive en aguas profundas y suele ser difícil de observar
-                    en su entorno natural.
-                </p>
-                <img src="img/cachalote-pigmeo.jpg" alt="Cachalote pigmeo">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Cachalote</h3>
+                    <p>
+                        Nombre científico: Physeter macrocephalus.
+                        Es un cetáceo dentado que puede realizar inmersiones
+                        profundas para cazar calamares y otros animales.
+                    </p>
+                    <img src="img/cachalote.webp" alt="Cachalote">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Cachalote enano</h3>
-                <p>
-                    Nombre científico: Kogia sima.
-                    Habita aguas cálidas y templadas. Se alimenta
-                    principalmente de calamares y otros animales
-                    de aguas profundas.
-                </p>
-                <img src="img/cachalote-enano.jpg" alt="Cachalote enano">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Cachalote pigmeo</h3>
+                    <p>
+                        Nombre científico: Kogia breviceps.
+                        Es mucho más pequeño que el cachalote común.
+                        Vive en aguas profundas y suele ser difícil de observar
+                        en su entorno natural.
+                    </p>
+                    <img src="img/cachalote-pigmeo.webp" alt="Cachalote pigmeo">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena picuda de Cuvier</h3>
-                <p>
-                    Nombre científico: Ziphius cavirostris.
-                    Es conocida por sus inmersiones profundas y prolongadas.
-                    Se alimenta principalmente de calamares.
-                </p>
-                <img src="img/ballena-picuda-cuvier.jpg" alt="Ballena picuda de Cuvier">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Cachalote enano</h3>
+                    <p>
+                        Nombre científico: Kogia sima.
+                        Habita aguas cálidas y templadas. Se alimenta
+                        principalmente de calamares y otros animales
+                        de aguas profundas.
+                    </p>
+                    <img src="img/cachalote-enano.webp" alt="Cachalote enano">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena picuda de Baird</h3>
-                <p>
-                    Nombre científico: Berardius bairdii.
-                    Habita aguas profundas del Pacífico Norte.
-                    Tiene un cuerpo robusto y un hocico alargado.
-                </p>
-                <img src="img/ballena-picuda-baird.jpg" alt="Ballena picuda de Baird">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena picuda de Cuvier</h3>
+                    <p>
+                        Nombre científico: Ziphius cavirostris.
+                        Es conocida por sus inmersiones profundas y prolongadas.
+                        Se alimenta principalmente de calamares.
+                    </p>
+                    <img src="img/ballena-picuda-cuvier.webp" alt="Ballena picuda de Cuvier">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena picuda del norte</h3>
-                <p>
-                    Nombre científico: Hyperoodon ampullatus.
-                    Vive en aguas profundas del Atlántico Norte.
-                    Se alimenta principalmente de calamares y otros
-                    organismos de profundidad.
-                </p>
-                <img src="img/ballena-picuda-norte.jpg" alt="Ballena picuda del norte">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena picuda de Baird</h3>
+                    <p>
+                        Nombre científico: Berardius bairdii.
+                        Habita aguas profundas del Pacífico Norte.
+                        Tiene un cuerpo robusto y un hocico alargado.
+                    </p>
+                    <img src="img/ballena-picuda-baird.webp" alt="Ballena picuda de Baird">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena piloto de aleta larga</h3>
-                <p>
-                    Nombre científico: Globicephala melas.
-                    Es un cetáceo de cuerpo oscuro y cabeza redondeada.
-                    Se desplaza en grupos y se alimenta de calamares
-                    y peces.
-                </p>
-                <img src="img/ballena-piloto-aleta-larga.jpg" alt="Ballena piloto de aleta larga">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena picuda del norte</h3>
+                    <p>
+                        Nombre científico: Hyperoodon ampullatus.
+                        Vive en aguas profundas del Atlántico Norte.
+                        Se alimenta principalmente de calamares y otros
+                        organismos de profundidad.
+                    </p>
+                    <img src="img/ballena-picuda-norte.webp" alt="Ballena picuda del norte">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Ballena piloto de aleta corta</h3>
-                <p>
-                    Nombre científico: Globicephala macrorhynchus.
-                    Habita principalmente aguas tropicales y subtropicales.
-                    Vive en grupos sociales y consume calamares y peces.
-                </p>
-                <img src="img/ballena-piloto-aleta-corta.jpg" alt="Ballena piloto de aleta corta">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena piloto de aleta larga</h3>
+                    <p>
+                        Nombre científico: Globicephala melas.
+                        Es un cetáceo de cuerpo oscuro y cabeza redondeada.
+                        Se desplaza en grupos y se alimenta de calamares
+                        y peces.
+                    </p>
+                    <img src="img/ballena-piloto-aleta-larga.webp" alt="Ballena piloto de aleta larga">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Beluga</h3>
-                <p>
-                    Nombre científico: Delphinapterus leucas.
-                    Es un cetáceo de color blanco cuando alcanza la edad
-                    adulta. Vive en aguas árticas y subárticas y emite
-                    numerosos sonidos para comunicarse.
-                </p>
-                <img src="img/beluga.jpg" alt="Beluga">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Ballena piloto de aleta corta</h3>
+                    <p>
+                        Nombre científico: Globicephala macrorhynchus.
+                        Habita principalmente aguas tropicales y subtropicales.
+                        Vive en grupos sociales y consume calamares y peces.
+                    </p>
+                    <img src="img/ballena-piloto-aleta-corta.webp" alt="Ballena piloto de aleta corta">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Narval</h3>
-                <p>
-                    Nombre científico: Monodon monoceros.
-                    Habita el Ártico. Muchos machos presentan un colmillo
-                    largo que en realidad es un diente desarrollado.
-                </p>
-                <img src="img/narval.jpg" alt="Narval">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Beluga</h3>
+                    <p>
+                        Nombre científico: Delphinapterus leucas.
+                        Es un cetáceo de color blanco cuando alcanza la edad
+                        adulta. Vive en aguas árticas y subárticas y emite
+                        numerosos sonidos para comunicarse.
+                    </p>
+                    <img src="img/beluga.webp" alt="Beluga">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Orca</h3>
-                <p>
-                    Nombre científico: Orcinus orca.
-                    Es un cetáceo dentado de la familia de los delfines.
-                    Sus poblaciones pueden tener diferentes dietas,
-                    comportamientos y formas de organización social.
-                </p>
-                <img src="img/orca.jpg" alt="Orca">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Narval</h3>
+                    <p>
+                        Nombre científico: Monodon monoceros.
+                        Habita el Ártico. Muchos machos presentan un colmillo
+                        largo que en realidad es un diente desarrollado.
+                    </p>
+                    <img src="img/narval.webp" alt="Narval">
+                </article>
 
-            <article class="especie-marina">
-                <h3>Calderón gris o delfín de Risso</h3>
-                <p>
-                    Nombre científico: Grampus griseus.
-                    Aunque no es una ballena con barbas, es un cetáceo
-                    de tamaño considerable que se alimenta principalmente
-                    de calamares.
-                </p>
-                <img src="img/calderon-gris.jpg" alt="Calderón gris">
-            </article>
+                <article class="especie-marina col">
+                    <h3>Orca</h3>
+                    <p>
+                        Nombre científico: Orcinus orca.
+                        Es un cetáceo dentado de la familia de los delfines.
+                        Sus poblaciones pueden tener diferentes dietas,
+                        comportamientos y formas de organización social.
+                    </p>
+                    <img src="img/orca.webp" alt="Orca">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Calderón gris o delfín de Risso</h3>
+                    <p>
+                        Nombre científico: Grampus griseus.
+                        Aunque no es una ballena con barbas, es un cetáceo
+                        de tamaño considerable que se alimenta principalmente
+                        de calamares.
+                    </p>
+                    <img src="img/calderon-gris.webp" alt="Calderón gris">
+                </article>
+
+            </div>
         </section>
 
         <section class="apartado-peces">
             <h2>Peces marinos</h2>
 
             <p>
-                Los peces marinos viven en ambientes muy variados, desde
-                arrecifes tropicales hasta las aguas frías y profundas.
-                Algunos se alimentan de algas, otros cazan peces y
-                crustáceos, y muchos forman parte de cadenas alimentarias
-                esenciales para la salud de los océanos.
+                Los peces marinos viven en ambientes muy variados, desde arrecifes tropicales hasta las aguas frías y profundas.
+                Algunos se alimentan de algas, otros cazan peces y crustáceos, y muchos forman parte de cadenas alimentarias esenciales para la salud de los océanos.
             </p>
 
-            <article class="especie-marina">
-                <h3>Tiburón ballena</h3>
-                <p>
-                    Nombre científico: Rhincodon typus.
-                    Es el pez más grande conocido. Se alimenta filtrando
-                    plancton y pequeños organismos del agua.
-                </p>
-                <img src="img/tiburon-ballena.jpg" alt="Tiburón ballena">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón blanco</h3>
-                <p>
-                    Nombre científico: Carcharodon carcharias.
-                    Es un gran depredador marino que se alimenta de peces
-                    y otros animales. Cumple una función importante
-                    en las redes alimentarias oceánicas.
-                </p>
-                <img src="img/tiburon-blanco.jpg" alt="Tiburón blanco">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón martillo común</h3>
-                <p>
-                    Nombre científico: Sphyrna lewini.
-                    Su cabeza tiene una forma característica que le ayuda
-                    a detectar presas. Habita aguas tropicales y templadas.
-                </p>
-                <img src="img/tiburon-martillo.jpg" alt="Tiburón martillo común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón tigre</h3>
-                <p>
-                    Nombre científico: Galeocerdo cuvier.
-                    Vive en mares tropicales y subtropicales.
-                    Se alimenta de una gran variedad de animales marinos.
-                </p>
-                <img src="img/tiburon-tigre.jpg" alt="Tiburón tigre">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón toro</h3>
-                <p>
-                    Nombre científico: Carcharhinus leucas.
-                    Habita aguas costeras y puede entrar en estuarios
-                    y ríos. Se alimenta de peces y otros animales acuáticos.
-                </p>
-                <img src="img/tiburon-toro.jpg" alt="Tiburón toro">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón azul</h3>
-                <p>
-                    Nombre científico: Prionace glauca.
-                    Tiene un cuerpo alargado y una coloración azulada.
-                    Recorre grandes distancias en aguas abiertas.
-                </p>
-                <img src="img/tiburon-azul.jpg" alt="Tiburón azul">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón zorro</h3>
-                <p>
-                    Nombre científico: Alopias vulpinus.
-                    Se distingue por su larga aleta caudal, que utiliza
-                    para ayudar a capturar peces.
-                </p>
-                <img src="img/tiburon-zorro.jpg" alt="Tiburón zorro">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón nodriza</h3>
-                <p>
-                    Nombre científico: Ginglymostoma cirratum.
-                    Suele descansar cerca del fondo marino durante el día.
-                    Se alimenta de pequeños peces e invertebrados.
-                </p>
-                <img src="img/tiburon-nodriza.jpg" alt="Tiburón nodriza">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Tiburón peregrino</h3>
-                <p>
-                    Nombre científico: Cetorhinus maximus.
-                    Es uno de los peces más grandes del mundo.
-                    Se alimenta filtrando plancton del agua.
-                </p>
-                <img src="img/tiburon-peregrino.jpg" alt="Tiburón peregrino">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Manta gigante</h3>
-                <p>
-                    Nombre científico: Mobula birostris.
-                    Es una raya de gran tamaño que se alimenta de plancton.
-                    Se desplaza por aguas tropicales y subtropicales.
-                </p>
-                <img src="img/manta-gigante.jpg" alt="Manta gigante">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Raya águila moteada</h3>
-                <p>
-                    Nombre científico: Aetobatus narinari.
-                    Tiene manchas claras sobre el dorso y una cola larga.
-                    Se alimenta de moluscos y crustáceos del fondo marino.
-                </p>
-                <img src="img/raya-aguila-moteada.jpg" alt="Raya águila moteada">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez payaso común</h3>
-                <p>
-                    Nombre científico: Amphiprion ocellaris.
-                    Vive asociado con ciertas anémonas marinas, con las
-                    que mantiene una relación que proporciona protección
-                    y alimento.
-                </p>
-                <img src="img/pez-payaso.jpg" alt="Pez payaso común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez cirujano azul</h3>
-                <p>
-                    Nombre científico: Paracanthurus hepatus.
-                    Habita arrecifes tropicales y se alimenta principalmente
-                    de algas. Ayuda a mantener el equilibrio del arrecife.
-                </p>
-                <img src="img/pez-cirujano-azul.jpg" alt="Pez cirujano azul">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez loro arcoíris</h3>
-                <p>
-                    Nombre científico: Scarus guacamaia.
-                    Utiliza sus dientes para alimentarse de algas y material
-                    presente sobre los arrecifes. Contribuye al reciclaje
-                    de nutrientes y a la dinámica de los fondos coralinos.
-                </p>
-                <img src="img/pez-loro-arcoiris.jpg" alt="Pez loro arcoíris">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez ángel reina</h3>
-                <p>
-                    Nombre científico: Holacanthus ciliaris.
-                    Presenta colores intensos y vive entre los arrecifes
-                    del Atlántico occidental y el Caribe.
-                </p>
-                <img src="img/pez-angel-reina.jpg" alt="Pez ángel reina">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez mariposa de cuatro ojos</h3>
-                <p>
-                    Nombre científico: Chaetodon capistratus.
-                    Es un pez pequeño de arrecife que presenta una mancha
-                    oscura cerca de la cola, parecida a un ojo.
-                </p>
-                <img src="img/pez-mariposa-cuatro-ojos.jpg" alt="Pez mariposa de cuatro ojos">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez león rojo</h3>
-                <p>
-                    Nombre científico: Pterois volitans.
-                    Tiene aletas con radios venenosos y se alimenta
-                    de peces pequeños y crustáceos. En algunas regiones
-                    es una especie invasora que afecta a los arrecifes.
-                </p>
-                <img src="img/pez-leon-rojo.jpg" alt="Pez león rojo">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez globo</h3>
-                <p>
-                    Nombre científico: Arothron nigropunctatus.
-                    Puede inflar su cuerpo como mecanismo de defensa.
-                    Algunas especies de peces globo contienen toxinas
-                    peligrosas para otros animales.
-                </p>
-                <img src="img/pez-globo.jpg" alt="Pez globo">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez trompeta</h3>
-                <p>
-                    Nombre científico: Aulostomus maculatus.
-                    Tiene un cuerpo largo y un hocico tubular.
-                    Acecha a pequeños peces entre las estructuras
-                    de los arrecifes.
-                </p>
-                <img src="img/pez-trompeta.jpg" alt="Pez trompeta">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Caballito de mar común</h3>
-                <p>
-                    Nombre científico: Hippocampus hippocampus.
-                    Es un pez de cuerpo erguido que utiliza su cola
-                    prensil para sujetarse a la vegetación submarina.
-                    El macho lleva los embriones en una bolsa incubadora.
-                </p>
-                <img src="img/caballito-mar-comun.jpg" alt="Caballito de mar común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Caballito de mar del Pacífico</h3>
-                <p>
-                    Nombre científico: Hippocampus ingens.
-                    Habita zonas costeras del Pacífico oriental.
-                    Se sujeta a estructuras submarinas y se alimenta
-                    de pequeños crustáceos.
-                </p>
-                <img src="img/caballito-mar-pacifico.jpg" alt="Caballito de mar del Pacífico">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Atún de aleta azul del Atlántico</h3>
-                <p>
-                    Nombre científico: Thunnus thynnus.
-                    Es un pez migratorio de gran tamaño, capaz de recorrer
-                    largas distancias y nadar a gran velocidad.
-                </p>
-                <img src="img/atun-aleta-azul.jpg" alt="Atún de aleta azul del Atlántico">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Atún de aleta amarilla</h3>
-                <p>
-                    Nombre científico: Thunnus albacares.
-                    Habita aguas tropicales y subtropicales.
-                    Es un nadador rápido que se alimenta de peces,
-                    calamares y crustáceos.
-                </p>
-                <img src="img/atun-aleta-amarilla.jpg" alt="Atún de aleta amarilla">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Atún listado</h3>
-                <p>
-                    Nombre científico: Katsuwonus pelamis.
-                    Es una especie de atún muy extendida en los océanos.
-                    Forma grupos y se alimenta de peces pequeños
-                    y otros animales marinos.
-                </p>
-                <img src="img/atun-listado.jpg" alt="Atún listado">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez espada</h3>
-                <p>
-                    Nombre científico: Xiphias gladius.
-                    Tiene un pico largo y aplanado que utiliza al cazar.
-                    Habita aguas abiertas y puede alcanzar gran tamaño.
-                </p>
-                <img src="img/pez-espada.jpg" alt="Pez espada">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez vela</h3>
-                <p>
-                    Nombre científico: Istiophorus platypterus.
-                    Es conocido por su gran aleta dorsal y su velocidad.
-                    Se alimenta de peces y calamares en aguas abiertas.
-                </p>
-                <img src="img/pez-vela.jpg" alt="Pez vela">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Marlín azul</h3>
-                <p>
-                    Nombre científico: Makaira nigricans.
-                    Es un pez de gran tamaño que vive en aguas oceánicas.
-                    Tiene un cuerpo musculoso y un pico alargado.
-                </p>
-                <img src="img/marlin-azul.jpg" alt="Marlín azul">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Dorado o pez mahi-mahi</h3>
-                <p>
-                    Nombre científico: Coryphaena hippurus.
-                    Presenta colores brillantes y habita aguas cálidas.
-                    Se alimenta de peces y calamares.
-                </p>
-                <img src="img/pez-dorado-mahi-mahi.jpg" alt="Dorado o pez mahi-mahi">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Jurel común</h3>
-                <p>
-                    Nombre científico: Trachurus trachurus.
-                    Es un pez de cuerpo alargado que forma bancos
-                    y se alimenta de pequeños animales marinos.
-                </p>
-                <img src="img/jurel-comun.jpg" alt="Jurel común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Caballa del Atlántico</h3>
-                <p>
-                    Nombre científico: Scomber scombrus.
-                    Vive en aguas templadas y forma bancos numerosos.
-                    Se alimenta de plancton y peces pequeños.
-                </p>
-                <img src="img/caballa-atlantico.jpg" alt="Caballa del Atlántico">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Sardina europea</h3>
-                <p>
-                    Nombre científico: Sardina pilchardus.
-                    Es un pez pequeño que se desplaza en grandes bancos.
-                    Se alimenta principalmente de plancton y constituye
-                    alimento para numerosos depredadores.
-                </p>
-                <img src="img/sardina-europea.jpg" alt="Sardina europea">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Anchoa europea</h3>
-                <p>
-                    Nombre científico: Engraulis encrasicolus.
-                    Es un pez pequeño que forma bancos y se alimenta
-                    de organismos planctónicos.
-                </p>
-                <img src="img/anchoa-europea.jpg" alt="Anchoa europea">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Merluza europea</h3>
-                <p>
-                    Nombre científico: Merluccius merluccius.
-                    Vive principalmente cerca del fondo marino.
-                    Se alimenta de peces y otros animales acuáticos.
-                </p>
-                <img src="img/merluza-europea.jpg" alt="Merluza europea">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Bacalao del Atlántico</h3>
-                <p>
-                    Nombre científico: Gadus morhua.
-                    Habita aguas frías del Atlántico Norte.
-                    Ha sido importante para la alimentación humana
-                    y la pesca comercial.
-                </p>
-                <img src="img/bacalao-atlantico.jpg" alt="Bacalao del Atlántico">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Lenguado común</h3>
-                <p>
-                    Nombre científico: Solea solea.
-                    Es un pez plano que vive sobre fondos arenosos
-                    y fangosos, donde se camufla para evitar depredadores
-                    y capturar alimento.
-                </p>
-                <img src="img/lenguado-comun.jpg" alt="Lenguado común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Mero gigante</h3>
-                <p>
-                    Nombre científico: Epinephelus lanceolatus.
-                    Es uno de los meros más grandes. Habita arrecifes
-                    y zonas rocosas del Indo-Pacífico.
-                </p>
-                <img src="img/mero-gigante.jpg" alt="Mero gigante">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Mero de Nassau</h3>
-                <p>
-                    Nombre científico: Epinephelus striatus.
-                    Habita arrecifes del Caribe y se alimenta de peces
-                    y crustáceos. Sus agrupaciones reproductivas
-                    necesitan protección.
-                </p>
-                <img src="img/mero-nassau.jpg" alt="Mero de Nassau">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pargo rojo</h3>
-                <p>
-                    Nombre científico: Lutjanus campechanus.
-                    Vive en el golfo de México y el Atlántico occidental.
-                    Se alimenta de peces pequeños y crustáceos.
-                </p>
-                <img src="img/pargo-rojo.jpg" alt="Pargo rojo">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pargo amarillo</h3>
-                <p>
-                    Nombre científico: Lutjanus argentiventris.
-                    Habita zonas rocosas y arrecifes del Pacífico oriental.
-                    Consume peces pequeños e invertebrados.
-                </p>
-                <img src="img/pargo-amarillo.jpg" alt="Pargo amarillo">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez damisela azul</h3>
-                <p>
-                    Nombre científico: Chrysiptera cyanea.
-                    Es un pez pequeño de color azul brillante que vive
-                    en arrecifes tropicales del Indo-Pacífico.
-                </p>
-                <img src="img/pez-damisela-azul.jpg" alt="Pez damisela azul">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez cardenal de Banggai</h3>
-                <p>
-                    Nombre científico: Pterapogon kauderni.
-                    Es un pez pequeño originario de Indonesia.
-                    Vive en grupos y se refugia entre corales,
-                    anémonas y otros organismos marinos.
-                </p>
-                <img src="img/pez-cardenal-banggai.jpg" alt="Pez cardenal de Banggai">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez mandarín</h3>
-                <p>
-                    Nombre científico: Synchiropus splendidus.
-                    Tiene colores intensos y habita fondos de arrecifes
-                    del Pacífico occidental. Se alimenta de pequeños
-                    invertebrados.
-                </p>
-                <img src="img/pez-mandarin.jpg" alt="Pez mandarín">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez murciélago de labios rojos</h3>
-                <p>
-                    Nombre científico: Ogcocephalus darwini.
-                    Es un pez del fondo marino conocido por sus aletas
-                    adaptadas para desplazarse sobre el sustrato.
-                    Habita las islas Galápagos y regiones cercanas.
-                </p>
-                <img src="img/pez-murcielago-labios-rojos.jpg" alt="Pez murciélago de labios rojos">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez luna</h3>
-                <p>
-                    Nombre científico: Mola mola.
-                    Es un pez de cuerpo muy alto y aplanado.
-                    Se alimenta de medusas y otros organismos marinos
-                    de cuerpo blando.
-                </p>
-                <img src="img/pez-luna.jpg" alt="Pez luna">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez remo gigante</h3>
-                <p>
-                    Nombre científico: Regalecus glesne.
-                    Es un pez alargado que habita aguas profundas.
-                    Su cuerpo puede alcanzar una longitud extraordinaria.
-                </p>
-                <img src="img/pez-remo-gigante.jpg" alt="Pez remo gigante">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez linterna</h3>
-                <p>
-                    Nombre común para varias especies de la familia Myctophidae.
-                    Muchos poseen órganos luminosos que producen luz
-                    y les ayudan a sobrevivir en las profundidades.
-                </p>
-                <img src="img/pez-linterna.jpg" alt="Pez linterna">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez víbora del Pacífico</h3>
-                <p>
-                    Nombre científico: Chauliodus macouni.
-                    Es un pez de aguas profundas que tiene dientes largos
-                    y órganos luminosos para atraer o localizar presas.
-                </p>
-                <img src="img/pez-vibora-pacifico.jpg" alt="Pez víbora del Pacífico">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez pescador abisal</h3>
-                <p>
-                    Nombre común para diferentes especies del grupo
-                    Ceratioidei. Algunas tienen una estructura luminosa
-                    sobre la cabeza que les ayuda a atraer presas
-                    en la oscuridad.
-                </p>
-                <img src="img/pez-pescador-abisal.jpg" alt="Pez pescador abisal">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez hacha marino</h3>
-                <p>
-                    Nombre común para especies de la familia Sternoptychidae.
-                    Tiene un cuerpo comprimido y, en muchas especies,
-                    órganos luminosos que facilitan su adaptación
-                    a las aguas profundas.
-                </p>
-                <img src="img/pez-hacha-marino.jpg" alt="Pez hacha marino">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez escorpión</h3>
-                <p>
-                    Nombre común para diferentes especies de la familia
-                    Scorpaenidae. Suele camuflarse entre rocas y arrecifes
-                    para esperar a sus presas.
-                </p>
-                <img src="img/pez-escorpion.jpg" alt="Pez escorpión">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez piedra</h3>
-                <p>
-                    Nombre científico: Synanceia verrucosa.
-                    Es un pez de camuflaje muy eficaz que vive sobre
-                    el fondo marino. Posee espinas venenosas como defensa.
-                </p>
-                <img src="img/pez-piedra.jpg" alt="Pez piedra">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez ballesta titán</h3>
-                <p>
-                    Nombre científico: Balistoides viridescens.
-                    Habita arrecifes del Indo-Pacífico y se alimenta
-                    de distintos invertebrados de caparazón duro.
-                </p>
-                <img src="img/pez-ballesta-titan.jpg" alt="Pez ballesta titán">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez loro azul</h3>
-                <p>
-                    Nombre científico: Scarus coeruleus.
-                    Vive en arrecifes del Atlántico occidental.
-                    Consume algas y material adherido a superficies
-                    rocosas y coralinas.
-                </p>
-                <img src="img/pez-loro-azul.jpg" alt="Pez loro azul">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez cirujano de Aquiles</h3>
-                <p>
-                    Nombre científico: Acanthurus achilles.
-                    Habita arrecifes del Pacífico y se alimenta de algas.
-                    Su cuerpo oscuro presenta marcas de colores intensos.
-                </p>
-                <img src="img/pez-cirujano-aquiles.jpg" alt="Pez cirujano de Aquiles">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez ángel emperador</h3>
-                <p>
-                    Nombre científico: Pomacanthus imperator.
-                    Vive en arrecifes del Indo-Pacífico.
-                    Los juveniles y los adultos presentan patrones
-                    de color diferentes.
-                </p>
-                <img src="img/pez-angel-emperador.jpg" alt="Pez ángel emperador">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez mariposa mapache</h3>
-                <p>
-                    Nombre científico: Chaetodon lunula.
-                    Tiene una franja oscura alrededor de los ojos
-                    y habita arrecifes del Indo-Pacífico.
-                </p>
-                <img src="img/pez-mariposa-mapache.jpg" alt="Pez mariposa mapache">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez trompeta chino</h3>
-                <p>
-                    Nombre científico: Aulostomus chinensis.
-                    Posee un cuerpo alargado y un hocico tubular.
-                    Se alimenta de pequeños peces en ambientes arrecifales.
-                </p>
-                <img src="img/pez-trompeta-chino.jpg" alt="Pez trompeta chino">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez aguja</h3>
-                <p>
-                    Nombre común para distintas especies de la familia
-                    Belonidae. Tiene mandíbulas largas y estrechas
-                    y suele nadar cerca de la superficie.
-                </p>
-                <img src="img/pez-aguja.jpg" alt="Pez aguja">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez volador</h3>
-                <p>
-                    Nombre común para distintas especies de la familia
-                    Exocoetidae. Sus aletas pectorales grandes le permiten
-                    planear brevemente sobre la superficie para escapar
-                    de los depredadores.
-                </p>
-                <img src="img/pez-volador.jpg" alt="Pez volador">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Morena verde</h3>
-                <p>
-                    Nombre científico: Gymnothorax funebris.
-                    Es una anguila marina que habita grietas y cavidades
-                    de los arrecifes. Caza peces y otros animales marinos.
-                </p>
-                <img src="img/morena-verde.jpg" alt="Morena verde">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Congrio europeo</h3>
-                <p>
-                    Nombre científico: Conger conger.
-                    Es un pez alargado que habita fondos rocosos
-                    y zonas costeras del Atlántico oriental y el Mediterráneo.
-                </p>
-                <img src="img/congrio-europeo.jpg" alt="Congrio europeo">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Anguila jardinera manchada</h3>
-                <p>
-                    Nombre científico: Heteroconger hassi.
-                    Vive en fondos arenosos de zonas tropicales.
-                    Se entierra parcialmente y sale de su refugio
-                    para capturar partículas alimenticias del agua.
-                </p>
-                <img src="img/anguila-jardinera-manchada.jpg" alt="Anguila jardinera manchada">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Róbalo común</h3>
-                <p>
-                    Nombre científico: Centropomus undecimalis.
-                    Habita zonas costeras, lagunas y estuarios.
-                    Puede vivir en aguas salobres y se alimenta de peces
-                    y crustáceos.
-                </p>
-                <img src="img/robalo-comun.jpg" alt="Róbalo común">
-            </article>
-
-            <article class="especie-marina">
-                <h3>Pez sierra de dientes grandes</h3>
-                <p>
-                    Nombre científico: Pristis pristis.
-                    Es una raya con un hocico largo provisto de dientes
-                    laterales. Habita aguas costeras y estuarios y necesita
-                    protección frente a la pesca accidental.
-                </p>
-                <img src="img/pez-sierra-dientes-grandes.jpg" alt="Pez sierra de dientes grandes">
-            </article>
-
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <article class="especie-marina col">
+                    <h3>Tiburón ballena</h3>
+                    <p>
+                        Nombre científico: Rhincodon typus.
+                        Es el pez más grande conocido. Se alimenta filtrando
+                        plancton y pequeños organismos del agua.
+                    </p>
+                    <img src="img/tiburon-ballena.webp" alt="Tiburón ballena">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón blanco</h3>
+                    <p>
+                        Nombre científico: Carcharodon carcharias.
+                        Es un gran depredador marino que se alimenta de peces
+                        y otros animales. Cumple una función importante
+                        en las redes alimentarias oceánicas.
+                    </p>
+                    <img src="img/tiburon-blanco.webp" alt="Tiburón blanco">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón martillo común</h3>
+                    <p>
+                        Nombre científico: Sphyrna lewini.
+                        Su cabeza tiene una forma característica que le ayuda
+                        a detectar presas. Habita aguas tropicales y templadas.
+                    </p>
+                    <img src="img/tiburon-martillo.webp" alt="Tiburón martillo común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón tigre</h3>
+                    <p>
+                        Nombre científico: Galeocerdo cuvier.
+                        Vive en mares tropicales y subtropicales.
+                        Se alimenta de una gran variedad de animales marinos.
+                    </p>
+                    <img src="img/tiburon-tigre.webp" alt="Tiburón tigre">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón toro</h3>
+                    <p>
+                        Nombre científico: Carcharhinus leucas.
+                        Habita aguas costeras y puede entrar en estuarios
+                        y ríos. Se alimenta de peces y otros animales acuáticos.
+                    </p>
+                    <img src="img/tiburon-toro.webp" alt="Tiburón toro">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón azul</h3>
+                    <p>
+                        Nombre científico: Prionace glauca.
+                        Tiene un cuerpo alargado y una coloración azulada.
+                        Recorre grandes distancias en aguas abiertas.
+                    </p>
+                    <img src="img/tiburon-azul.webp" alt="Tiburón azul">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón zorro</h3>
+                    <p>
+                        Nombre científico: Alopias vulpinus.
+                        Se distingue por su larga aleta caudal, que utiliza
+                        para ayudar a capturar peces.
+                    </p>
+                    <img src="img/tiburon-zorro.webp" alt="Tiburón zorro">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón nodriza</h3>
+                    <p>
+                        Nombre científico: Ginglymostoma cirratum.
+                        Suele descansar cerca del fondo marino durante el día.
+                        Se alimenta de pequeños peces e invertebrados.
+                    </p>
+                    <img src="img/tiburon-nodriza.webp" alt="Tiburón nodriza">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Tiburón peregrino</h3>
+                    <p>
+                        Nombre científico: Cetorhinus maximus.
+                        Es uno de los peces más grandes del mundo.
+                        Se alimenta filtrando plancton del agua.
+                    </p>
+                    <img src="img/tiburon-peregrino.webp" alt="Tiburón peregrino">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Manta gigante</h3>
+                    <p>
+                        Nombre científico: Mobula birostris.
+                        Es una raya de gran tamaño que se alimenta de plancton.
+                        Se desplaza por aguas tropicales y subtropicales.
+                    </p>
+                    <img src="img/manta-gigante.webp" alt="Manta gigante">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Raya águila moteada</h3>
+                    <p>
+                        Nombre científico: Aetobatus narinari.
+                        Tiene manchas claras sobre el dorso y una cola larga.
+                        Se alimenta de moluscos y crustáceos del fondo marino.
+                    </p>
+                    <img src="img/raya-aguila-moteada.webp" alt="Raya águila moteada">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez payaso común</h3>
+                    <p>
+                        Nombre científico: Amphiprion ocellaris.
+                        Vive asociado con ciertas anémonas marinas, con las
+                        que mantiene una relación que proporciona protección
+                        y alimento.
+                    </p>
+                    <img src="img/pez-payaso.webp" alt="Pez payaso común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez cirujano azul</h3>
+                    <p>
+                        Nombre científico: Paracanthurus hepatus.
+                        Habita arrecifes tropicales y se alimenta principalmente
+                        de algas. Ayuda a mantener el equilibrio del arrecife.
+                    </p>
+                    <img src="img/pez-cirujano-azul.webp" alt="Pez cirujano azul">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez loro arcoíris</h3>
+                    <p>
+                        Nombre científico: Scarus guacamaia.
+                        Utiliza sus dientes para alimentarse de algas y material
+                        presente sobre los arrecifes. Contribuye al reciclaje
+                        de nutrientes y a la dinámica de los fondos coralinos.
+                    </p>
+                    <img src="img/pez-loro-arcoiris.webp" alt="Pez loro arcoíris">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez ángel reina</h3>
+                    <p>
+                        Nombre científico: Holacanthus ciliaris.
+                        Presenta colores intensos y vive entre los arrecifes
+                        del Atlántico occidental y el Caribe.
+                    </p>
+                    <img src="img/pez-angel-reina.webp" alt="Pez ángel reina">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez mariposa de cuatro ojos</h3>
+                    <p>
+                        Nombre científico: Chaetodon capistratus.
+                        Es un pez pequeño de arrecife que presenta una mancha
+                        oscura cerca de la cola, parecida a un ojo.
+                    </p>
+                    <img src="img/pez-mariposa-cuatro-ojos.webp" alt="Pez mariposa de cuatro ojos">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez león rojo</h3>
+                    <p>
+                        Nombre científico: Pterois volitans.
+                        Tiene aletas con radios venenosos y se alimenta
+                        de peces pequeños y crustáceos. En algunas regiones
+                        es una especie invasora que afecta a los arrecifes.
+                    </p>
+                    <img src="img/pez-leon-rojo.webp" alt="Pez león rojo">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez globo</h3>
+                    <p>
+                        Nombre científico: Arothron nigropunctatus.
+                        Puede inflar su cuerpo como mecanismo de defensa.
+                        Algunas especies de peces globo contienen toxinas
+                        peligrosas para otros animales.
+                    </p>
+                    <img src="img/pez-globo.webp" alt="Pez globo">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez trompeta</h3>
+                    <p>
+                        Nombre científico: Aulostomus maculatus.
+                        Tiene un cuerpo largo y un hocico tubular.
+                        Acecha a pequeños peces entre las estructuras
+                        de los arrecifes.
+                    </p>
+                    <img src="img/pez-trompeta.webp" alt="Pez trompeta">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Caballito de mar común</h3>
+                    <p>
+                        Nombre científico: Hippocampus hippocampus.
+                        Es un pez de cuerpo erguido que utiliza su cola
+                        prensil para sujetarse a la vegetación submarina.
+                        El macho lleva los embriones en una bolsa incubadora.
+                    </p>
+                    <img src="img/caballito-mar-comun.webp" alt="Caballito de mar común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Caballito de mar del Pacífico</h3>
+                    <p>
+                        Nombre científico: Hippocampus ingens.
+                        Habita zonas costeras del Pacífico oriental.
+                        Se sujeta a estructuras submarinas y se alimenta
+                        de pequeños crustáceos.
+                    </p>
+                    <img src="img/caballito-mar-pacifico.webp" alt="Caballito de mar del Pacífico">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Atún de aleta azul del Atlántico</h3>
+                    <p>
+                        Nombre científico: Thunnus thynnus.
+                        Es un pez migratorio de gran tamaño, capaz de recorrer
+                        largas distancias y nadar a gran velocidad.
+                    </p>
+                    <img src="img/atun-aleta-azul.webp" alt="Atún de aleta azul del Atlántico">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Atún de aleta amarilla</h3>
+                    <p>
+                        Nombre científico: Thunnus albacares.
+                        Habita aguas tropicales y subtropicales.
+                        Es un nadador rápido que se alimenta de peces,
+                        calamares y crustáceos.
+                    </p>
+                    <img src="img/atun-aleta-amarilla.webp" alt="Atún de aleta amarilla">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Atún listado</h3>
+                    <p>
+                        Nombre científico: Katsuwonus pelamis.
+                        Es una especie de atún muy extendida en los océanos.
+                        Forma grupos y se alimenta de peces pequeños
+                        y otros animales marinos.
+                    </p>
+                    <img src="img/atun-listado.webp" alt="Atún listado">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez espada</h3>
+                    <p>
+                        Nombre científico: Xiphias gladius.
+                        Tiene un pico largo y aplanado que utiliza al cazar.
+                        Habita aguas abiertas y puede alcanzar gran tamaño.
+                    </p>
+                    <img src="img/pez-espada.webp" alt="Pez espada">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez vela</h3>
+                    <p>
+                        Nombre científico: Istiophorus platypterus.
+                        Es conocido por su gran aleta dorsal y su velocidad.
+                        Se alimenta de peces y calamares en aguas abiertas.
+                    </p>
+                    <img src="img/pez-vela.webp" alt="Pez vela">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Marlín azul</h3>
+                    <p>
+                        Nombre científico: Makaira nigricans.
+                        Es un pez de gran tamaño que vive en aguas oceánicas.
+                        Tiene un cuerpo musculoso y un pico alargado.
+                    </p>
+                    <img src="img/marlin-azul.webp" alt="Marlín azul">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Dorado o pez mahi-mahi</h3>
+                    <p>
+                        Nombre científico: Coryphaena hippurus.
+                        Presenta colores brillantes y habita aguas cálidas.
+                        Se alimenta de peces y calamares.
+                    </p>
+                    <img src="img/pez-dorado-mahi-mahi.webp" alt="Dorado o pez mahi-mahi">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Jurel común</h3>
+                    <p>
+                        Nombre científico: Trachurus trachurus.
+                        Es un pez de cuerpo alargado que forma bancos
+                        y se alimenta de pequeños animales marinos.
+                    </p>
+                    <img src="img/jurel-comun.webp" alt="Jurel común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Caballa del Atlántico</h3>
+                    <p>
+                        Nombre científico: Scomber scombrus.
+                        Vive en aguas templadas y forma bancos numerosos.
+                        Se alimenta de plancton y peces pequeños.
+                    </p>
+                    <img src="img/caballa-atlantico.webp" alt="Caballa del Atlántico">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Sardina europea</h3>
+                    <p>
+                        Nombre científico: Sardina pilchardus.
+                        Es un pez pequeño que se desplaza en grandes bancos.
+                        Se alimenta principalmente de plancton y constituye
+                        alimento para numerosos depredadores.
+                    </p>
+                    <img src="img/sardina-europea.webp" alt="Sardina europea">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Anchoa europea</h3>
+                    <p>
+                        Nombre científico: Engraulis encrasicolus.
+                        Es un pez pequeño que forma bancos y se alimenta
+                        de organismos planctónicos.
+                    </p>
+                    <img src="img/anchoa-europea.webp" alt="Anchoa europea">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Merluza europea</h3>
+                    <p>
+                        Nombre científico: Merluccius merluccius.
+                        Vive principalmente cerca del fondo marino.
+                        Se alimenta de peces y otros animales acuáticos.
+                    </p>
+                    <img src="img/merluza-europea.webp" alt="Merluza europea">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Bacalao del Atlántico</h3>
+                    <p>
+                        Nombre científico: Gadus morhua.
+                        Habita aguas frías del Atlántico Norte.
+                        Ha sido importante para la alimentación humana
+                        y la pesca comercial.
+                    </p>
+                    <img src="img/bacalao-atlantico.webp" alt="Bacalao del Atlántico">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Lenguado común</h3>
+                    <p>
+                        Nombre científico: Solea solea.
+                        Es un pez plano que vive sobre fondos arenosos
+                        y fangosos, donde se camufla para evitar depredadores
+                        y capturar alimento.
+                    </p>
+                    <img src="img/lenguado-comun.webp" alt="Lenguado común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Mero gigante</h3>
+                    <p>
+                        Nombre científico: Epinephelus lanceolatus.
+                        Es uno de los meros más grandes. Habita arrecifes
+                        y zonas rocosas del Indo-Pacífico.
+                    </p>
+                    <img src="img/mero-gigante.webp" alt="Mero gigante">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Mero de Nassau</h3>
+                    <p>
+                        Nombre científico: Epinephelus striatus.
+                        Habita arrecifes del Caribe y se alimenta de peces
+                        y crustáceos. Sus agrupaciones reproductivas
+                        necesitan protección.
+                    </p>
+                    <img src="img/mero-nassau.webp" alt="Mero de Nassau">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pargo rojo</h3>
+                    <p>
+                        Nombre científico: Lutjanus campechanus.
+                        Vive en el golfo de México y el Atlántico occidental.
+                        Se alimenta de peces pequeños y crustáceos.
+                    </p>
+                    <img src="img/pargo-rojo.webp" alt="Pargo rojo">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pargo amarillo</h3>
+                    <p>
+                        Nombre científico: Lutjanus argentiventris.
+                        Habita zonas rocosas y arrecifes del Pacífico oriental.
+                        Consume peces pequeños e invertebrados.
+                    </p>
+                    <img src="img/pargo-amarillo.webp" alt="Pargo amarillo">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez damisela azul</h3>
+                    <p>
+                        Nombre científico: Chrysiptera cyanea.
+                        Es un pez pequeño de color azul brillante que vive
+                        en arrecifes tropicales del Indo-Pacífico.
+                    </p>
+                    <img src="img/pez-damisela-azul.webp" alt="Pez damisela azul">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez cardenal de Banggai</h3>
+                    <p>
+                        Nombre científico: Pterapogon kauderni.
+                        Es un pez pequeño originario de Indonesia.
+                        Vive en grupos y se refugia entre corales,
+                        anémonas y otros organismos marinos.
+                    </p>
+                    <img src="img/pez-cardenal-banggai.webp" alt="Pez cardenal de Banggai">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez mandarín</h3>
+                    <p>
+                        Nombre científico: Synchiropus splendidus.
+                        Tiene colores intensos y habita fondos de arrecifes
+                        del Pacífico occidental. Se alimenta de pequeños
+                        invertebrados.
+                    </p>
+                    <img src="img/pez-mandarin.webp" alt="Pez mandarín">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez murciélago de labios rojos</h3>
+                    <p>
+                        Nombre científico: Ogcocephalus darwini.
+                        Es un pez del fondo marino conocido por sus aletas
+                        adaptadas para desplazarse sobre el sustrato.
+                        Habita las islas Galápagos y regiones cercanas.
+                    </p>
+                    <img src="img/pez-murcielago-labios-rojos.webp" alt="Pez murciélago de labios rojos">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez luna</h3>
+                    <p>
+                        Nombre científico: Mola mola.
+                        Es un pez de cuerpo muy alto y aplanado.
+                        Se alimenta de medusas y otros organismos marinos
+                        de cuerpo blando.
+                    </p>
+                    <img src="img/pez-luna.webp" alt="Pez luna">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez remo gigante</h3>
+                    <p>
+                        Nombre científico: Regalecus glesne.
+                        Es un pez alargado que habita aguas profundas.
+                        Su cuerpo puede alcanzar una longitud extraordinaria.
+                    </p>
+                    <img src="img/pez-remo-gigante.webp" alt="Pez remo gigante">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez linterna</h3>
+                    <p>
+                        Nombre común para varias especies de la familia Myctophidae.
+                        Muchos poseen órganos luminosos que producen luz
+                        y les ayudan a sobrevivir en las profundidades.
+                    </p>
+                    <img src="img/pez-linterna.webp" alt="Pez linterna">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez víbora del Pacífico</h3>
+                    <p>
+                        Nombre científico: Chauliodus macouni.
+                        Es un pez de aguas profundas que tiene dientes largos
+                        y órganos luminosos para atraer o localizar presas.
+                    </p>
+                    <img src="img/pez-vibora-pacifico.webp" alt="Pez víbora del Pacífico">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez pescador abisal</h3>
+                    <p>
+                        Nombre común para diferentes especies del grupo
+                        Ceratioidei. Algunas tienen una estructura luminosa
+                        sobre la cabeza que les ayuda a atraer presas
+                        en la oscuridad.
+                    </p>
+                    <img src="img/pez-pescador-abisal.webp" alt="Pez pescador abisal">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez hacha marino</h3>
+                    <p>
+                        Nombre común para especies de la familia Sternoptychidae.
+                        Tiene un cuerpo comprimido y, en muchas especies,
+                        órganos luminosos que facilitan su adaptación
+                        a las aguas profundas.
+                    </p>
+                    <img src="img/pez-hacha-marino.webp" alt="Pez hacha marino">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez escorpión</h3>
+                    <p>
+                        Nombre común para diferentes especies de la familia
+                        Scorpaenidae. Suele camuflarse entre rocas y arrecifes
+                        para esperar a sus presas.
+                    </p>
+                    <img src="img/pez-escorpion.webp" alt="Pez escorpión">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez piedra</h3>
+                    <p>
+                        Nombre científico: Synanceia verrucosa.
+                        Es un pez de camuflaje muy eficaz que vive sobre
+                        el fondo marino. Posee espinas venenosas como defensa.
+                    </p>
+                    <img src="img/pez-piedra.webp" alt="Pez piedra">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez ballesta titán</h3>
+                    <p>
+                        Nombre científico: Balistoides viridescens.
+                        Habita arrecifes del Indo-Pacífico y se alimenta
+                        de distintos invertebrados de caparazón duro.
+                    </p>
+                    <img src="img/pez-ballesta-titan.webp" alt="Pez ballesta titán">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez loro azul</h3>
+                    <p>
+                        Nombre científico: Scarus coeruleus.
+                        Vive en arrecifes del Atlántico occidental.
+                        Consume algas y material adherido a superficies
+                        rocosas y coralinas.
+                    </p>
+                    <img src="img/pez-loro-azul.webp" alt="Pez loro azul">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez cirujano de Aquiles</h3>
+                    <p>
+                        Nombre científico: Acanthurus achilles.
+                        Habita arrecifes del Pacífico y se alimenta de algas.
+                        Su cuerpo oscuro presenta marcas de colores intensos.
+                    </p>
+                    <img src="img/pez-cirujano-aquiles.webp" alt="Pez cirujano de Aquiles">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez ángel emperador</h3>
+                    <p>
+                        Nombre científico: Pomacanthus imperator.
+                        Vive en arrecifes del Indo-Pacífico.
+                        Los juveniles y los adultos presentan patrones
+                        de color diferentes.
+                    </p>
+                    <img src="img/pez-angel-emperador.webp" alt="Pez ángel emperador">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez mariposa mapache</h3>
+                    <p>
+                        Nombre científico: Chaetodon lunula.
+                        Tiene una franja oscura alrededor de los ojos
+                        y habita arrecifes del Indo-Pacífico.
+                    </p>
+                    <img src="img/pez-mariposa-mapache.webp" alt="Pez mariposa mapache">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez trompeta chino</h3>
+                    <p>
+                        Nombre científico: Aulostomus chinensis.
+                        Posee un cuerpo alargado y un hocico tubular.
+                        Se alimenta de pequeños peces en ambientes arrecifales.
+                    </p>
+                    <img src="img/pez-trompeta-chino.webp" alt="Pez trompeta chino">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez aguja</h3>
+                    <p>
+                        Nombre común para distintas especies de la familia
+                        Belonidae. Tiene mandíbulas largas y estrechas
+                        y suele nadar cerca de la superficie.
+                    </p>
+                    <img src="img/pez-aguja.webp" alt="Pez aguja">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez volador</h3>
+                    <p>
+                        Nombre común para distintas especies de la familia
+                        Exocoetidae. Sus aletas pectorales grandes le permiten
+                        planear brevemente sobre la superficie para escapar
+                        de los depredadores.
+                    </p>
+                    <img src="img/pez-volador.webp" alt="Pez volador">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Morena verde</h3>
+                    <p>
+                        Nombre científico: Gymnothorax funebris.
+                        Es una anguila marina que habita grietas y cavidades
+                        de los arrecifes. Caza peces y otros animales marinos.
+                    </p>
+                    <img src="img/morena-verde.webp" alt="Morena verde">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Congrio europeo</h3>
+                    <p>
+                        Nombre científico: Conger conger.
+                        Es un pez alargado que habita fondos rocosos
+                        y zonas costeras del Atlántico oriental y el Mediterráneo.
+                    </p>
+                    <img src="img/congrio-europeo.webp" alt="Congrio europeo">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Anguila jardinera manchada</h3>
+                    <p>
+                        Nombre científico: Heteroconger hassi.
+                        Vive en fondos arenosos de zonas tropicales.
+                        Se entierra parcialmente y sale de su refugio
+                        para capturar partículas alimenticias del agua.
+                    </p>
+                    <img src="img/anguila-jardinera-manchada.webp" alt="Anguila jardinera manchada">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Róbalo común</h3>
+                    <p>
+                        Nombre científico: Centropomus undecimalis.
+                        Habita zonas costeras, lagunas y estuarios.
+                        Puede vivir en aguas salobres y se alimenta de peces
+                        y crustáceos.
+                    </p>
+                    <img src="img/robalo-comun.webp" alt="Róbalo común">
+                </article>
+
+                <article class="especie-marina col">
+                    <h3>Pez sierra de dientes grandes</h3>
+                    <p>
+                        Nombre científico: Pristis pristis.
+                        Es una raya con un hocico largo provisto de dientes
+                        laterales. Habita aguas costeras y estuarios y necesita
+                        protección frente a la pesca accidental.
+                    </p>
+                    <img src="img/pez-sierra-dientes-grandes.webp" alt="Pez sierra de dientes grandes">
+                </article>
+
+            </div>
         </section>
 
         <section class="apartado-importancia">
@@ -1649,5 +1688,8 @@
         <p>Guardia Oceánica, Centro de Conservación Marina.</p>
         <p>Por un océano más limpio y una vida marina protegida.</p>
     </footer>
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
