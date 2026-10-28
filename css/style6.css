@@ -23,28 +23,28 @@ body {
   color: var(--texto-oscuro);
   line-height: 1.6;
 }
-
-.barra-navegacion {
-  background-color: var(--azul-nocturno);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  border-bottom: 3px solid var(--azul-cian);
-  box-shadow: 0 4px 12px rgba(1, 6, 44, 0.3);
+/*===================================================================*/
+.barra-navegacion{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: var(--azul-cian);
+    box-shadow: 0 6px 10px var(--azul-oceano);
 }
+.contenedor-navegacion{
+    width: 1200px;
+    margin: auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
 
-.contenedor-navegacion {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0.9rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.enlace-marca-sitio {
+.nombre-sitio {
   color: var(--blanco);
   font-size: 1.4rem;
   font-weight: 700;
@@ -52,45 +52,31 @@ body {
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
-.boton-abrir-menu {
-  display: none;
-  background: transparent;
-  border: 1px solid var(--azul-hielo);
-  color: var(--blanco);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.icono-menu-navegacion::after {
-  content: "☰";
-  font-size: 1.2rem;
-  color: var(--blanco);
-}
-
-.lista-enlaces-navegacion {
-  list-style: none;
+.lista-menu {
+  list-style: none !important;
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
+  margin: 7px;
+  padding: 5px;
 }
-
-.enlace-navegacion {
-  color: var(--blanco);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+.enlace-navegacion{
+    color: var(--azul-hielo);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
-
-.enlace-navegacion:hover,
-.enlace-navegacion[aria-current="page"] {
+.enlace-navegacion:hover, .enlace-navegacion[aria-current="page"] {
   background-color: var(--azul-oceano);
   color: var(--blanco);
   border-bottom: 2px solid var(--azul-cian);
+  cursor: pointer;
+}
+.boton-abrir-menu {
+  display: none !important;
 }
 
 .cabecera-pagina {
@@ -176,11 +162,7 @@ body {
   font-size: 0.95rem;
   color: var(--azul-abisal);
 }
-.campo-nombre,
-.campo-correo,
-.campo-contrasena,
-.campo-seleccion-perfil,
-.campo-motivacion {
+.campo-nombre, .campo-correo, .campo-contrasena, .campo-seleccion-perfil, .campo-motivacion {
   width: 100%;
   padding: 0.8rem 1rem;
   border: 1.5px solid var(--azul-hielo);
@@ -192,11 +174,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.campo-nombre:focus,
-.campo-correo:focus,
-.campo-contrasena:focus,
-.campo-seleccion-perfil:focus,
-.campo-motivacion:focus {
+.campo-nombre:focus, .campo-correo:focus, .campo-contrasena:focus, .campo-seleccion-perfil:focus, .campo-motivacion:focus {
   outline: none;
   border-color: var(--azul-oceano);
   background-color: var(--blanco);
@@ -208,8 +186,7 @@ body {
   min-height: 110px;
 }
 
-.grupo-modalidad-participacion,
-.grupo-areas-interes {
+.grupo-modalidad-participacion, .grupo-areas-interes {
   border: 1.5px dashed var(--azul-hielo);
   padding: 1.2rem 1.4rem;
   border-radius: 8px;
@@ -217,16 +194,14 @@ body {
   margin-top: 0.3rem;
 }
 
-.etiqueta-modalidad,
-.etiqueta-areas-interes {
+.etiqueta-modalidad, .etiqueta-areas-interes {
   font-weight: 600;
   color: var(--azul-abisal);
   padding: 0 0.5rem;
   font-size: 0.95rem;
 }
 
-.opcion-modalidad,
-.opcion-area-interes {
+.opcion-modalidad, .opcion-area-interes {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -234,15 +209,13 @@ body {
   cursor: pointer;
 }
 
-.opcion-modalidad label,
-.opcion-area-interes label {
+.opcion-modalidad label, .opcion-area-interes label {
   font-size: 0.95rem;
   color: var(--texto-oscuro);
   cursor: pointer;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
   accent-color: var(--azul-oceano);
   width: 17px;
   height: 17px;
