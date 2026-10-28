@@ -1,0 +1,61 @@
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #010b22;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #4E9DBE;
+    box-shadow: 0 6px 10px #00506C;
+}
+.contenedor-navegacion {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.nombre-sitio {
+    color: #AFC9D9;
+    font-size: 1.4rem;
+    font-weight: 750;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.lista-menu {
+    list-style: none !important;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 7px;
+    padding: 5px;
+}
+.enlace-navegacion {
+    color: #AFC9D9;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.enlace-navegacion:hover, .enlace-navegacion[aria-current="page"] {
+    background-color: #00506C;
+    color: #FFFFFF;
+    border-bottom: 2px solid #4E9DBE;
+    cursor: pointer;
+}
+.boton-abrir-menu {
+    display: none !important;
+}
+.encabezado-pagina {
+    padding-top: 100px;
+}

@@ -208,8 +208,8 @@
 .qhacemos {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #F8FCFD; /* Fondo sutilmente azulado claro */
-    border-left: 5px solid var(--azul-cian, #4E9DBE); /* Franja lateral elegante */
+    background-color: #F8FCFD;
+    border-left: 5px solid var(--azul-cian, #4E9DBE);
     padding: 2.5rem 3rem;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(2, 44, 56, 0.05);
@@ -284,7 +284,7 @@
 
 
 
-.seccion-especies-fija {
+.seccion-especies {
     background-image: url('../img/fondo-oceano.jpg');
     background-size: cover;
     background-position: center;
@@ -299,19 +299,7 @@
     height: 100%;
     padding: 4rem 0;
 }
-.titulo-seccion-azul {
-    text-align: center;
-    color: var(--azul-hielo);
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
 
-.subtitulo-seccion-azul {
-    color: var(--gris-azulado);
-    font-size: 1.05rem;
-    text-align: center;
-}
 .tarjeta-especie {
     border: 1px solid rgba(78, 157, 190, 0.3);
     border-radius: 12px;
@@ -320,7 +308,7 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
-.tarjeta-especie-azul:hover {
+.tarjeta-especie:hover {
     transform: translateY(-5px);
     border-color: var(--azul-cian);
 }
