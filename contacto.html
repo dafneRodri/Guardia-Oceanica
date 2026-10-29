@@ -1,233 +1,196 @@
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
+    <title>Guardia Oceánica | Registro de Voluntarios y Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style6.css" rel="stylesheet">
+</head>
+<body class="pagina-registro-clara">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Guardia Oceánica | Proyectos de Conservación</title>
-        <link href="css/style3.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
+    <div class="barra-navegacion">
+        <div class="contenedor-navegacion">
+            <a class="nombre-sitio" href="index.html">
+                Guardia Oceánica
+            </a>
 
-        <div class="barra-navegacion">
-            <div class="contenedor-navegacion">
-                <a class="nombre-sitio" href="index.html">
-                    Guardia Oceánica
-                </a>
+            <div class="boton-abrir-menu">
+                <span class="icono-menu-navegacion"></span>
+            </div>
 
-                <div class="boton-abrir-menu">
-                    <span class="icono-menu-navegacion"></span>
-                </div>
-
-                <div class="contenedor-menu-navegacion" id="menuNavegacion">
-                    <div class="lista-menu">
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="index.html">Inicio</a>
-                        </div>
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="especies.html">Especies</a>
-                        </div>
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="conservacion.html" aria-current="page">Conservación</a>
-                        </div>
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="voluntariado.html">Voluntariado</a>
-                        </div>
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="noticias.html">Noticias</a>
-                        </div>
-                        <div class="elemento-menu">
-                            <a class="enlace-navegacion" href="contacto.html">Registro</a>
-                        </div>
+            <div class="contenedor-menu-navegacion" id="menuNavegacion">
+                <div class="lista-menu">
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="index.html">Inicio</a>
+                    </div>
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="especies.html">Especies</a>
+                    </div>
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="conservacion.html">Conservación</a>
+                    </div>
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="voluntariado.html">Voluntariado</a>
+                    </div>
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="noticias.html">Noticias</a>
+                    </div>
+                    <div class="elemento-menu">
+                        <a class="enlace-navegacion" href="contacto.html" aria-current="page">Registro</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-
-        <div class="cabecera-pagina">
-            <div class="contenedor-cabecera">
-                <span class="subtitulo-cabecera">
-                    Proyectos Científicos
-                </span>
-                <h1 class="titulo-pagina">
-                    Estrategias de Restauración y Protección Oceánica
-                </h1>
-                <p class="descripcion-pagina">
-                    Modelos de intervención ecológica basados en tecnología subacuática, monitoreo satelital en tiempo real y vinculación comunitaria activa.
-                </p>
-            </div>
+    <div class="cabecera-pagina">
+        <div class="contenedor-cabecera">
+            <h1 class="titulo-pagina">
+                Registro de Voluntarios y Afiliación
+            </h1>
+            <p class="descripcion-pagina">
+                Completa tus datos para unirte formalmente a las brigadas de protección oceánica.
+            </p>
         </div>
+    </div>
 
-        <div class="fondo-pantalla-completa"></div>
+    <div class="fondo-pantalla-completa-claro"></div>
 
-        <div class="contenido-principal">
-            
-            <div class="seccion-lineas-accion mb-5">
-                <div class="text-center mb-5">
-                    <h2 class="titulo-lineas-accion">Nuestras Líneas de Acción Global</h2>
-                    <p class="descripcion-lineas-accion">
-                        Cada iniciativa es auditada bajo estrictos estándares de bioética e impacto biológico a largo plazo.
-                    </p>
-                </div>
+    <div class="contenido-principal">
+        <div class="contenedor-formulario">
 
-                <div class="row g-4 justify-content-center">
-                    
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">01 / Ecosistemas</div>
-                            <h3 class="titulo-proyecto-conservacion">Saneamiento de Manglares</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Jornadas intensivas de recolección de microplásticos y dragado manual en esteros y playas de anidación crítica.
-                            </p>
+            <div class="seccion-registro">
+                <h2 class="titulo-formulario">
+                    Formulario de Inscripción
+                </h2>
+
+                <div class="formulario-registro">
+                    <div class="grupo-campo-formulario">
+                        <label for="campoNombre" class="etiqueta-campo">
+                            Nombre Completo:
+                        </label>
+                        <input type="text" class="campo-nombre" id="campoNombre" name="nombre" placeholder="Ej. Dafne Rodriguez Rosas" autocomplete="name" required>
+                    </div>
+
+                    <div class="grupo-campo-formulario">
+                        <label for="campoCorreo" class="etiqueta-campo">
+                            Correo Electrónico:
+                        </label>
+                        <input type="email" class="campo-correo" id="campoCorreo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="grupo-campo-formulario">
+                        <label for="campoContrasena" class="etiqueta-campo">
+                            Contraseña de Usuario:
+                        </label>
+                        <input type="password" class="campo-contrasena" id="campoContrasena" name="contrasena" placeholder="Crea una contraseña segura" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="grupo-campo-formulario">
+                        <label for="campoPerfil" class="etiqueta-campo">
+                            Perfil del Participante:
+                        </label>
+                        <select class="campo-seleccion-perfil" id="campoPerfil" name="perfil" required>
+                            <option value="" selected disabled>
+                                Selecciona una opción...
+                            </option>
+                            <option value="estudiante">
+                                Estudiante / Universitario
+                            </option>
+                            <option value="investigador">
+                                Biólogo / Investigador
+                            </option>
+                            <option value="buzo">
+                                Buzo Certificado
+                            </option>
+                            <option value="general">
+                                Público General / Simpatizante
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-modalidad-participacion">
+                        <div class="etiqueta-modalidad">
+                            Modalidad de Participación:
+                        </div>
+
+                        <div class="opcion-modalidad">
+                            <input type="radio" class="opcion-presencial" name="opcionModalidad" id="modalidadPresencial" value="presencial" checked>
+                            <label for="modalidadPresencial">
+                                Presencial (Trabajo en campo)
+                            </label>
+                        </div>
+
+                        <div class="opcion-modalidad">
+                            <input type="radio" class="opcion-virtual" name="opcionModalidad" id="modalidadVirtual" value="virtual">
+                            <label for="modalidadVirtual">
+                                Virtual (Difusión y educación)
+                            </label>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">02 / Arrecifes</div>
-                            <h3 class="titulo-proyecto-conservacion">Viveros de Coral</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Propagación acelerada de fragmentos termorresistentes de <em>Acropora palmata</em> en estructuras subacuáticas.
-                            </p>
+                    <div class="grupo-campo-formulario">
+                        <label for="campoMensaje" class="etiqueta-campo">
+                            ¿Por qué deseas unirte a Guardia Oceánica?:
+                        </label>
+                        <textarea class="campo-motivacion" id="campoMensaje" name="motivacion" rows="4" placeholder="Escribe brevemente tu motivación personal o experiencia previa..." required></textarea>
+                    </div>
+
+                    <div class="grupo-areas-interes">
+                        <div class="etiqueta-areas-interes">
+                            Áreas de Interés Principal:
+                        </div>
+
+                        <div class="opcion-area-interes">
+                            <input type="checkbox" class="interes-limpieza" id="interesLimpieza" name="areasInteres" value="limpieza">
+                            <label for="interesLimpieza">
+                                Limpieza de Playas y Manglares
+                            </label>
+                        </div>
+
+                        <div class="opcion-area-interes">
+                            <input type="checkbox" class="interes-corales" id="interesCorales" name="areasInteres" value="corales">
+                            <label for="interesCorales">
+                                Restauración de Arrecifes Coralinos
+                            </label>
+                        </div>
+
+                        <div class="opcion-area-interes">
+                            <input type="checkbox" class="interes-tortugas" id="interesTortugas" name="areasInteres" value="tortugas">
+                            <label for="interesTortugas">
+                                Protección de Nidos de Tortugas
+                            </label>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">03 / Monitoreo</div>
-                            <h3 class="titulo-proyecto-conservacion">Telemetría Satelital</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Marcaje telemático y acústico de fauna en peligro de extinción para mapear corredores biológicos seguros.
-                            </p>
-                        </div>
+                    <div class="grupo-aceptacion-terminos">
+                        <input type="checkbox" class="casilla-aceptacion-terminos" id="campoTerminos" name="aceptacionTerminos" required>
+                        <label for="campoTerminos" class="etiqueta-terminos">
+                            Acepto el aviso de privacidad y los términos de participación voluntaria.
+                        </label>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">04 / Comunidades</div>
-                            <h3 class="titulo-proyecto-conservacion">Pesca Sostenible</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Capacitación y suministro de artes de pesca selectivas a cooperativas locales para reducir la captura incidental.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">05 / Quelonios</div>
-                            <h3 class="titulo-proyecto-conservacion">Protección de Nidos</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Vigilancia nocturna en playas y reubicación de nidadas en riesgo hacia corrales controlados térmicamente.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">06 / Tecnología IoT</div>
-                            <h3 class="titulo-proyecto-conservacion">Boyas Sensorizadas</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Despliegue de estaciones automatizadas para medir pH, salinidad y temperatura contra el blanqueamiento.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">07 / Genética</div>
-                            <h3 class="titulo-proyecto-conservacion">Banco de Germoplasma</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Preservación y secuenciación de muestras genómicas de especies bentónicas frente al cambio climático.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="tarjeta-proyecto-conservacion">
-                            <div class="ti1-indicador">08 / Océano Limpio</div>
-                            <h3 class="titulo-proyecto-conservacion">Remoción de Redes</h3>
-                            <p class="descripcion-proyecto-conservacion">
-                                Maniobras de buceo técnico profundo para desenganchar aparejos pesqueros fantasma en arrecifes.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="seccion-metodologia-alianzas mb-5">
-                <div class="row g-4 justify-content-center">
-                    
-                    <div class="col-12 col-md-6">
-                        <div class="panel-cientifico">
-                            <h3 class="titulo-panel">Metodología de Trabajo Científico</h3>
-                            <p class="subtitulo-panel">Protocolos rigurosos validados internacionalmente:</p>
-                            
-                            <ul class="lista-detallada">
-                                <li>
-                                    <strong>Diagnóstico Térmico:</strong> Mapeo satelital constante para anticipar olas de calor marino.
-                                </li>
-                                <li>
-                                    <strong>Análisis Molecular:</strong> Selección genética de colonias madre altamente resilientes.
-                                </li>
-                                <li>
-                                    <strong>Censos Subacuáticos:</strong> Metodología de transectos para evaluar densidad de biomasa.
-                                </li>
-                                <li>
-                                    <strong>Auditoría de Supervivencia:</strong> Informes semestrales públicos de reintroducción a campo.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="panel-cientifico">
-                            <h3 class="titulo-panel">Alianzas Estratégicas y Cooperación</h3>
-                            <p class="subtitulo-panel">Red global de apoyo interdisciplinario:</p>
-                            
-                            <ul class="lista-detallada">
-                                <li>
-                                    <strong>Universidades:</strong> Residencias profesionales, tesis de posgrado y laboratorios compartidos.
-                                </li>
-                                <li>
-                                    <strong>Cooperativas:</strong> Acuerdos de veda voluntaria y establecimiento de zonas de repoblamiento.
-                                </li>
-                                <li>
-                                    <strong>Organismos Globales:</strong> Homologación de bases de datos oceanográficas abiertas.
-                                </li>
-                                <li>
-                                    <strong>Gobiernos Locales:</strong> Ordenamiento ecológico costero y regulación turística.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="sec-vol">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <h3 class="titulo-vol">¿Quieres formar parte activa de la conservación?</h3>
-                        <p class="texto-vol">Súmate como voluntario de campo o apoya en las divisiones científicas y logísticas.</p>
-                    </div>
-                    <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
-                        <a href="voluntariado.html" class="btn-cta-pro">Ver Convocatorias</a>
+                    <div class="grupo-boton-envio">
+                        <button type="submit" class="boton-completar-registro">
+                            Completar Registro
+                        </button>
                     </div>
                 </div>
             </div>
 
         </div>
+    </div>
 
-        <div class="pie-pagina">
-            <div class="container text-center">
-                <p class="nombre-institucion">Guardia Oceánica, Centro de Conservación Marina.</p>
-                <p class="mensaje-conservacion">Por un océano más limpio y una vida marina protegida.</p>
-            </div>
+    <div class="pie-pagina">
+        <div class="contenedor-pie-pagina">
+            <p class="nombre-institucion">
+                Guardia Oceánica, Centro de Conservación Marina.
+            </p>
+            <p class="mensaje-conservacion">
+                Por un océano más limpio y una vida marina protegida.
+            </p>
         </div>
+    </div>
 
-    </body>
+</body>
 </html>
