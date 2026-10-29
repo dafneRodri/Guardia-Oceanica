@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-
 :root {
-    --azul-abisal:       #022C38;
-    --azul-oceano:       #00506C;
-    --azul-cian:         #4E9DBE;
-    --azul-hielo:        #AFC9D9;
-    --gris-azulado:      #A2BCC6;
-    --blanco:            #FFFFFF;
-    --fondo-pagina:      #F4F8FA;
+    --azul-abisal: #022C38;
+    --azul-oceano: #00506C;
+    --azul-cian: #4E9DBE;
+    --azul-hielo: #AFC9D9;
+    --gris-azulado: #A2BCC6;
+    --blanco: #FFFFFF;
     --fondo-pagina-oscu: #01062C;
-    --texto-oscuro:      #0C1B24;
-    --fuente-titulos:    'Playfair Display SC', serif;
-    --fuente-principal:  'Lato', sans-serif;
+    --fuente-titulos:'Playfair Display SC', serif;
+    --fuente-principal:'Lato', sans-serif;
 }
 
 * {
