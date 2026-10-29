@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 :root {
     --azul-abisal:       #022C38;
     --azul-oceano:       #00506C;
@@ -6,12 +7,15 @@
     --gris-azulado:      #A2BCC6;
     --blanco:            #FFFFFF;
     --fondo-pagina-oscu: #01062C;
-    --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --fuente-titulos: 'Playfair Display SC', serif;
+    --fuente-principal: 'Lato', sans-serif;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: var(--fondo-pagina-oscu);
-    font-family: var(--fuente-principal);
+
     color: var(--blanco);
     margin: 0;
     padding: 0;
@@ -81,6 +85,16 @@ body {
 .boton-abrir-menu {
     display: none !important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    letter-spacing: 1px;
+}
+p {
+    font-family: var(--fuente-principal);
+}
+
+
 
 .encabezado-pagina {
     padding-top: 100px;

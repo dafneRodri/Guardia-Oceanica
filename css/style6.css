@@ -1,4 +1,4 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');:root {
   --azul-nocturno: #01062C;
   --azul-abisal:   #022C38;
   --azul-oceano:   #00506C;
@@ -8,17 +8,17 @@
   --blanco:        #FFFFFF;
   --fondo-pagina:  #F4F8FA;
   --texto-oscuro:  #0C1B24;
-  --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --fuente-titulos: 'Playfair Display SC', serif;
+    --fuente-principal: 'Lato', sans-serif;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
 body {
-  font-family: var(--fuente-principal);
+
   background-color: var(--fondo-pagina);
   color: var(--texto-oscuro);
   line-height: 1.6;
@@ -96,6 +96,17 @@ body {
 .boton-abrir-menu {
     display: none !important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    letter-spacing: 1px;
+}
+p {
+    font-family: var(--fuente-principal);
+}
+
+
+
 .encabezado-pagina {
     padding-top: 100px;
 }
@@ -191,7 +202,7 @@ body {
   border: 1.5px solid var(--azul-hielo);
   border-radius: 8px;
   font-size: 0.95rem;
-  font-family: var(--fuente-principal);
+
   color: var(--texto-oscuro);
   background-color: #FAFDFE;
   transition: all 0.3s ease;
