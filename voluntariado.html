@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Guardia Oceánica | Voluntariado</title>
-        <link href="css/style4.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="css/style4.css" rel="stylesheet">
     </head>
     <body>
 
@@ -16,36 +16,36 @@
                     Guardia Oceánica
                 </a>
 
-                <div class="boton-abrir-menu">
-                    <span class="icono-menu-navegacion"></span>
-                </div>
+                <button class="boton-abrir-menu" id="btnHamburguesa" type="button" aria-label="Abrir menú de navegación">
+                    &#9776;
+                </button>
 
                 <div class="contenedor-menu-navegacion" id="menuNavegacion">
-                    <div class="lista-menu">
-                        <div class="elemento-menu">
+                    <ul class="lista-menu">
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="index.html">Inicio</a>
-                        </div>
-                        <div class="elemento-menu">
+                        </li>
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="especies.html">Especies</a>
-                        </div>
-                        <div class="elemento-menu">
+                        </li>
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="conservacion.html">Conservación</a>
-                        </div>
-                        <div class="elemento-menu">
+                        </li>
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="voluntariado.html" aria-current="page">Voluntariado</a>
-                        </div>
-                        <div class="elemento-menu">
+                        </li>
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="noticias.html">Noticias</a>
-                        </div>
-                        <div class="elemento-menu">
+                        </li>
+                        <li class="elemento-menu">
                             <a class="enlace-navegacion" href="contacto.html">Registro</a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="cabecera-pagina">
+        <section class="cabecera-pagina">
             <div class="contenedor-cabecera">
                 <span class="subtitulo-cabecera">
                     Acción Comunitaria
@@ -57,13 +57,13 @@
                     Únete a nuestras brigadas en playas, laboratorios y centros de rescate para proteger activamente los ecosistemas marinos.
                 </p>
             </div>
-        </div>
+        </section>
 
         <div class="fondo-pantalla-completa"></div>
 
-        <main class="contenido-principal">
+        <main class="contenido-principal container">
             
-            <div class="seccion-lineas-accion">
+            <section class="seccion-lineas-accion">
                 <div class="text-center mb-5">
                     <h2 class="titulo-lineas-accion">Convocatorias Abiertas</h2>
                     <p class="descripcion-lineas-accion">
@@ -74,41 +74,41 @@
                 <div class="row g-4 justify-content-center">
                     
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="tarjeta-proyecto-conservacion">
+                        <article class="tarjeta-proyecto-conservacion" data-aos="fade-up">
                             <div class="ti1-indicador">Costa / Campo</div>
                             <h3 class="titulo-proyecto-conservacion">Brigada de Limpieza Costera</h3>
                             <p class="descripcion-proyecto-conservacion">
                                 Participa en jornadas de recolección de residuos sólidos y clasificación de plásticos en zonas de alto valor ecológico.
                             </p>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="tarjeta-proyecto-conservacion">
+                        <article class="tarjeta-proyecto-conservacion" data-aos="fade-up">
                             <div class="ti1-indicador">Laboratorio</div>
                             <h3 class="titulo-proyecto-conservacion">Asistencia en Viveros</h3>
                             <p class="descripcion-proyecto-conservacion">
                                 Apoya en el mantenimiento y monitoreo del crecimiento de fragmentos de coral en instalaciones controladas.
                             </p>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="tarjeta-proyecto-conservacion">
+                        <article class="tarjeta-proyecto-conservacion" data-aos="fade-up">
                             <div class="ti1-indicador">Educación</div>
                             <h3 class="titulo-proyecto-conservacion">Promotoría Ambiental</h3>
                             <p class="descripcion-proyecto-conservacion">
                                 Imparte talleres de sensibilización ecológica en comunidades costeras e instituciones educativas aliadas.
                             </p>
-                        </div>
+                        </article>
                     </div>
 
                 </div>
-            </div>
+            </section>
                     
-            <div id="carruselVoluntariado" class="carrusel-contenedor">
+            <section id="carruselVoluntariado" class="carrusel-contenedor" data-aos="fade-up">
                 <div class="carousel-inner">
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="img/patrulla-noct.webp" alt="Voluntarios brindando atención y ayuda humanitaria durante una patrulla nocturna">
                     </div>
                     <div class="carousel-item">
@@ -123,17 +123,17 @@
                 <button id="btnSiguiente" class="btn-control" aria-label="Siguiente">></button>
 
                 <div class="carousel-indicators">
-                    <button aria-label="Diapositiva 1"></button>
+                    <button aria-label="Diapositiva 1" class="active"></button>
                     <button aria-label="Diapositiva 2"></button>
                     <button aria-label="Diapositiva 3"></button>
                 </div>
-            </div>
+            </section>
 
-            <div class="seccion-metodologia-alianzas">
+            <section class="seccion-metodologia-alianzas">
                 <div class="row g-4 justify-content-center">
                     
                     <div class="col-12 col-md-6">
-                        <div class="panel-cientifico" data-aos="flip-up">
+                        <article class="panel-cientifico" data-aos="fade-up">
                             <h3 class="titulo-panel">Requisitos de Ingreso</h3>
                             <p class="subtitulo-panel">Lo que necesitas para formar parte de las brigadas:</p>
                             
@@ -151,11 +151,11 @@
                                     <strong>Inducción:</strong> Completar el curso virtual básico de seguridad y protocolos marinos.
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="col-12 col-md-6">
-                        <div class="panel-cientifico" data-aos="flip-up">
+                        <article class="panel-cientifico" data-aos="fade-up">
                             <h3 class="titulo-panel">Beneficios del Voluntario</h3>
                             <p class="subtitulo-panel">Crecimiento profesional y personal garantizado:</p>
                             
@@ -173,13 +173,13 @@
                                     <strong>Equipo Oficial:</strong> Dotación de indumentaria institucional para las brigadas de campo.
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
 
                 </div>
-            </div>
+            </section>
 
-            <div class="sec-vol">
+            <section class="sec-vol">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
                         <h3 class="titulo-vol">¿Listo para comenzar tu registro?</h3>
@@ -189,9 +189,9 @@
                         <a href="contacto.html" class="btn-cta-pro">Formulario de Registro</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
+        </main>
 
         <footer class="pie-pagina">
             <div class="container text-center">
@@ -199,10 +199,23 @@
                 <p class="mensaje-conservacion">Por un océano más limpio y una vida marina protegida.</p>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/voluntariado.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                once: true
+            });
+
+            const btnHamburguesa = document.getElementById("btnHamburguesa");
+            const menuNavegacion = document.getElementById("menuNavegacion");
+
+            if (btnHamburguesa && menuNavegacion) {
+                btnHamburguesa.addEventListener("click", function () {
+                    menuNavegacion.classList.toggle("activo");
+                });
+            }
         </script>
     </body>
 </html>
