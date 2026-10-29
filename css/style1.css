@@ -248,14 +248,16 @@ p {
 }
 
 .texto-cifra {
-
-    color: var(--texto-oscuro);
- 
-
+    color: black;
 }
-
-
-
+.qhacemos p {
+    color: #000000 !important; /* Cambia el color del texto a negro */
+    margin-bottom: 0.8rem;
+}
+.contenido-ayudar p {
+    color: #000000 !important; /* Cambia el color del texto a negro */
+    margin-bottom: 0.8rem;
+}
 
 
 
