@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const contenedorFormulario = document.querySelector(".formulario-registro");
-    const botonEnviar = document.querySelector(".boton-completar-registro");
+    const formulario = document.querySelector(".formulario-registro");
+    if (!formulario) return;
 
-    if (!contenedorFormulario || !botonEnviar) return;
-
+    // Crear elemento para mensajes dinámicos en el DOM
     const divAlerta = document.createElement("div");
-    divAlerta.style.cssText = "margin: 1.2rem 0; padding: 1rem; border-radius: 8px; font-size: 1rem; font-weight: 600; text-align: center; display: none;";
+    divAlerta.id = "mensajeServidor";
     
     const grupoBoton = document.querySelector(".grupo-boton-envio");
-    contenedorFormulario.insertBefore(divAlerta, grupoBoton);
+    formulario.insertBefore(divAlerta, grupoBoton);
 
-    botonEnviar.addEventListener("click", function (e) {
+    formulario.addEventListener("submit", function (e) {
         e.preventDefault();
 
         const campoNombre = document.querySelector("#campoNombre");
@@ -27,59 +26,40 @@ document.addEventListener("DOMContentLoaded", function () {
         const valorMensaje = campoMensaje.value.trim();
         const aceptoTerminos = campoTerminos.checked;
 
+        // Limpiar clases previas con classList (Requisito de la rúbrica)
+        divAlerta.className = "alerta-mensaje";
 
         if (valorNombre === "" || valorCorreo === "" || valorContrasena === "" || valorPerfil === "" || valorMensaje === "") {
-            mostrarAlerta("Por favor, completa todos los campos obligatorios del registro.", "error");
+            mostrarAlerta("Por favor, completa todos los campos obligatorios.", "alerta-error");
             return;
         }
 
         const formatoCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!formatoCorreo.test(valorCorreo)) {
-            mostrarAlerta("Por favor, introduce un correo electrónico válido.", "error");
+            mostrarAlerta("Por favor, introduce un correo electrónico válido.", "alerta-error");
             campoCorreo.focus();
             return;
         }
 
         if (valorContrasena.length < 6) {
-            mostrarAlerta("La contraseña de usuario debe tener al menos 6 caracteres.", "error");
+            mostrarAlerta("La contraseña debe tener al menos 6 caracteres.", "alerta-error");
             campoContrasena.focus();
             return;
         }
 
         if (!aceptoTerminos) {
-            mostrarAlerta("Debes aceptar el aviso de privacidad y los términos para continuar.", "error");
+            mostrarAlerta("Debes aceptar el aviso de privacidad para continuar.", "alerta-error");
             campoTerminos.focus();
             return;
         }
 
-        mostrarAlerta("¡Registro completado con éxito! Bienvenido a las brigadas de Guardia Oceánica.", "exito");
-
-        // Limpiar campos
-        campoNombre.value = "";
-        campoCorreo.value = "";
-        campoContrasena.value = "";
-        campoPerfil.selectedIndex = 0;
-        campoMensaje.value = "";
-        campoTerminos.checked = false;
-        
-        const modalidadPresencial = document.querySelector("#modalidadPresencial");
-        if (modalidadPresencial) modalidadPresencial.checked = true;
-
-        document.querySelectorAll(".opcion-area-interes input").forEach(chk => chk.checked = false);
+        // Éxito: Uso de classList.add
+        mostrarAlerta("¡Registro completado con éxito! Bienvenido a Guardia Oceánica.", "alerta-exito");
+        formulario.reset();
     });
 
-    function mostrarAlerta(mensaje, tipo) {
+    function mostrarAlerta(mensaje, claseEstado) {
         divAlerta.textContent = mensaje;
-        divAlerta.style.display = "block";
-
-        if (tipo === "error") {
-            divAlerta.style.backgroundColor = "#F8D7DA";
-            divAlerta.style.color = "#721C24";
-            divAlerta.style.border = "1px solid #F5C6CB";
-        } else if (tipo === "exito") {
-            divAlerta.style.backgroundColor = "#D4EDDA";
-            divAlerta.style.color = "#155724";
-            divAlerta.style.border = "1px solid #C3E6CB";
-        }
+        divAlerta.classList.add("mostrar", claseEstado);
     }
 });

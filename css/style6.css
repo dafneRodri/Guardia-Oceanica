@@ -39,16 +39,19 @@ body {
 }
 
 .contenedor-navegacion {
-    width: 1200px;
-    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0.8rem 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .contenedor-navegacion .nombre-sitio {
-    margin-right: 10rem;
+    margin-right: 0;
 }
 
 .nombre-sitio {
@@ -227,16 +230,6 @@ body {
     box-shadow: 0 6px 10px #00506c66;
 }
 
-.contenedor-navegacion {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0.8rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-}
 
 .nombre-sitio {
     color: #AFC9D9;

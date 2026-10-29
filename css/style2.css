@@ -42,11 +42,13 @@ body {
 .contenedor-navegacion {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.8rem 2rem;
+    margin: auto;
+    padding: 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .nombre-sitio {
