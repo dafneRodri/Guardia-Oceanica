@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.querySelector(".formulario-registro");
     if (!formulario) return;
 
-    // Crear elemento para mensajes dinámicos en el DOM
+    //elemento para mensajes dinámicos en el DOM
     const divAlerta = document.createElement("div");
     divAlerta.id = "mensajeServidor";
     
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const valorMensaje = campoMensaje.value.trim();
         const aceptoTerminos = campoTerminos.checked;
 
-        // Limpiar clases previas con classList (Requisito de la rúbrica)
         divAlerta.className = "alerta-mensaje";
 
         if (valorNombre === "" || valorCorreo === "" || valorContrasena === "" || valorPerfil === "" || valorMensaje === "") {
@@ -53,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Éxito: Uso de classList.add
         mostrarAlerta("¡Registro completado con éxito! Bienvenido a Guardia Oceánica.", "alerta-exito");
         formulario.reset();
     });
