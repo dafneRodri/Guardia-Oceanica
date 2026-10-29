@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style1.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Guardia Oceánica | Centro de Conservación Marina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="fondo-inicio">
-        <nav class="barra-navegacion">
+        <div class="barra-navegacion">
             <div class="contenedor-navegacion">
                 <a class="nombre-sitio" href="index.html">
                     Guardia Oceánica
@@ -42,7 +43,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
 
         <div class="titulo-2columnas">
             <div class="titulo1">
@@ -61,8 +62,8 @@
         </div>
     </div>
     
-    <main>
-        <section class="seccion-impacto">
+    <div class="contenido-principal">
+        <div class="seccion-impacto">
             <div class="container">
                 <h2 class="titulo-impacto">Nuestro Impacto en Cifras</h2>
                 <div class="row">
@@ -92,9 +93,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="sec-queh">
+        <div class="sec-queh" data-aos="fade-right">
             <div class="qhacemos">
                 <h2>¿Qué hacemos?</h2>
                 <p>
@@ -104,17 +105,16 @@
                     También buscamos informar a las personas sobre los problemas que afectan a los océanos y enseñar cómo pueden contribuir a su cuidado mediante acciones responsables.
                 </p>
             </div>
-            
-        </section>
+        </div>
 
-        <section class="sec-especies" >
+        <div class="sec-especies">
             <div class="cont-especies">
                 <h2 class="titulo-especies py-5">Especies marinas</h2>
                 <p class="p-especies">
                     Conoce algunas de las especies clave que protegemos y monitoreamos en nuestras costas.
                 </p>
 
-                <div class="row g-4 py-5" >
+                <div class="row g-4 py-5">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="tarjeta-especie">
                             <h3 class="tit-especie">Tortugas marinas</h3>
@@ -152,9 +152,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="sec-proyectos">
+        <div class="sec-proyectos">
             <div class="capa-oscura-proyectos">
                 <div class="cont-proyectos py-5">
                     <h2 class="titulo-proyectos">Nuestros proyectos</h2>
@@ -189,9 +189,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="sec-ayudar">
+        <div class="sec-ayudar" data-aos="zoom-in">
             <h2 class="titulo-ayudar">¿Cómo puedes ayudar?</h2>
             <div class="contenido-ayudar">
                 <p>
@@ -201,9 +201,9 @@
                     En Guardia Oceánica creemos que la información y la participación de la sociedad son importantes para construir un futuro en el que la vida marina esté protegida.
                 </p>
             </div>
-        </section>
+        </div>
 
-        <section class="sec-testimonios">
+        <div class="sec-testimonios">
             <div class="container">
                 <h2 class="titulo-testimonios">Voces del Proyecto</h2>
                 <div class="row">
@@ -225,10 +225,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <footer class="pie-pag">
+    <div class="pie-pag">
         <div class="con-pie">
             <p class="tex1">
                 Guardia oceánica, Centro de Conservación Marina.
@@ -237,6 +237,10 @@
                 Por un océano más limpio y una vida marina protegida.
             </p>
         </div>
-    </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 </html>
