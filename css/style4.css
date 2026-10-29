@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 :root {
-    --azul-abisal:       #022C38;
-    --azul-oceano:       #00506C;
-    --azul-cian:         #4E9DBE;
-    --azul-hielo:        #AFC9D9;
-    --gris-azulado:      #A2BCC6;
-    --blanco:            #FFFFFF;
+    --azul-abisal: #022C38;
+    --azul-oceano: #00506C;
+    --azul-cian: #4E9DBE;
+    --azul-hielo: #AFC9D9;
+    --gris-azulado: #A2BCC6;
+    --blanco: #FFFFFF;
     --fondo-pagina-oscu: #01062C;
     --fuente-titulos: 'Playfair Display SC', serif;
     --fuente-principal: 'Lato', sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--fondo-pagina-oscu);
-
     color: var(--blanco);
     margin: 0;
     padding: 0;
 }
-
 
 .barra-navegacion {
     position: fixed;
@@ -30,9 +31,11 @@ body {
     z-index: 1000;
     background-color: #010b22;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid #4E9DBE;
-    box-shadow: 0 6px 10px #00506C;
+    box-shadow: 0 6px 10px #00506c66;
 }
+
 .contenedor-navegacion {
     width: 100%;
     max-width: 1200px;
@@ -43,6 +46,7 @@ body {
     align-items: center;
     gap: 10rem;
 }
+
 .nombre-sitio {
     color: #AFC9D9;
     font-size: 1.4rem;
@@ -53,6 +57,7 @@ body {
     align-items: center;
     white-space: nowrap;
 }
+
 .lista-menu {
     list-style: none !important;
     display: flex;
@@ -61,6 +66,7 @@ body {
     margin: 7px;
     padding: 5px;
 }
+
 .enlace-navegacion {
     color: #AFC9D9;
     text-decoration: none;
@@ -70,43 +76,38 @@ body {
     border-radius: 10px;
     transition: all 0.3s ease;
     white-space: nowrap;
+    display: block;
+    position: relative;
+    z-index: 10;
 }
-.enlace-navegacion:hover, .enlace-navegacion[aria-current="page"] {
+
+.enlace-navegacion:hover, 
+.enlace-navegacion[aria-current="page"] {
     background-color: #00506C;
     color: #FFFFFF;
     border-bottom: 2px solid #4E9DBE;
     cursor: pointer;
 }
+
 .boton-abrir-menu {
     display: none !important;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
     letter-spacing: 1px;
 }
-p {
+
+p, span, a, button, label, li {
     font-family: var(--fuente-principal);
 }
-
 
 .encabezado-pagina {
     padding-top: 100px;
 }
 
 .cabecera-pagina {
-    background: 
-        linear-gradient(
-            135deg, 
-            rgba(1, 6, 44, 0.35) 0%,   
-            rgba(1, 6, 44, 0.85) 65%,  
-            rgba(1, 6, 44, 0.98) 100%  
-        ),
-        url('../img/oceano.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: transparent;
     min-height: 55vh;
     display: flex;
     flex-direction: column;
@@ -114,41 +115,22 @@ p {
     align-items: flex-start;
     padding: 8rem 5rem 4rem 5rem;
     position: relative;
-    border-bottom: 1px solid rgba(78, 157, 190, 0.25);
+    border-bottom: 1px solid #4e9dbe40;
 }
 
 .contenedor-cabecera {
     max-width: 800px;
 }
 
-
-.imagen-carrusel {
-    height: 420px;
-    object-fit: cover;
-    filter: brightness(0.75);
-}
-
-.fondo-caption {
-    background: rgba(1, 6, 44, 0.75);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(78, 157, 190, 0.3);
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-}
-
-.fondo-caption h5 {
+.subtitulo-cabecera {
+    display: block;
+    font-size: 1.1rem;
     color: #90e0ef;
-    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
-
-.fondo-caption p {
-    color: #e0fbfc;
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-
 
 .titulo-pagina {
     font-size: 3rem;
@@ -157,7 +139,7 @@ p {
     color: #FFFFFF;
     margin-bottom: 1rem;
     line-height: 1.1;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 4px 20px #000000b3;
 }
 
 .descripcion-pagina {
@@ -165,37 +147,46 @@ p {
     color: var(--azul-hielo);
     line-height: 1.6;
     font-weight: 300;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 10px #000000b3;
     margin: 0;
 }
 
-
-
-.contenido-principal {
-    padding: 3rem 1rem;
+.fondo-pantalla-completa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: 
+        linear-gradient(180deg, #01062ce6 0%, #010b22eb 50%, #01062ce6 100%),
+        url('../img/oceano.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.titulo-seccion {
+.contenido-principal {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem;
+}
+
+.seccion-lineas-accion {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.titulo-lineas-accion {
     text-align: center;
-    color: var(--azul-hielo);
+    color: #FFFFFF;
     font-size: 2.3rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
-    position: relative;
 }
 
-.titulo-seccion::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--azul-cian), transparent);
-    margin: 0.5rem auto 0 auto;
-    border-radius: 2px;
-}
-
-.descripcion-seccion {
-    color: var(--gris-azulado);
+.descripcion-lineas-accion {
+    color: var(--azul-hielo);
     font-size: 1.05rem;
     text-align: center;
     max-width: 800px;
@@ -204,41 +195,46 @@ p {
     font-weight: 300;
 }
 
-
-
-
-.tarjeta-programa-voluntariado {
+.tarjeta-proyecto-conservacion {
     background: linear-gradient(135deg, #0e4687 0%, #190b98 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(78, 157, 190, 0.4);
+    border: 1px solid #4e9dbe66;
     border-radius: 14px;
     padding: 1.5rem 1.2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    box-shadow: 0 10px 30px #00000080;
     transition: all 0.35s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 }
 
-.tarjeta-programa-voluntariado:hover {
+.tarjeta-proyecto-conservacion:hover {
     transform: translateY(-6px);
     border-color: #90e0ef;
-    box-shadow: 0 15px 35px #00b4d8;
+    box-shadow: 0 15px 35px #00b4d8aa;
     background: linear-gradient(135deg, #057cbc 0%, #1945b4 100%);
 }
 
-.nombre-programa {
+.ti1-indicador {
+    color: #90e0ef;
+    font-weight: 500;
+}
+
+.titulo-proyecto-conservacion {
     color: #FFFFFF;
     font-size: 1.25rem;
     font-weight: 650;
     margin-bottom: 0.8rem;
-    border-bottom: 1.5px solid rgba(144, 224, 239, 0.3);
+    border-bottom: 1.5px solid #90e0ef4d;
     padding-bottom: 0.4rem;
     text-align: left;
 }
 
-.descripcion-programa {
+.descripcion-proyecto-conservacion {
     color: #e0fbfc;
     font-size: 0.92rem;
     line-height: 1.55;
@@ -247,39 +243,53 @@ p {
     text-align: left;
 }
 
-
-
-
-.apartado-requisitos,
-.apartado-beneficios {
-    background: linear-gradient(135deg, #1f1da0 0%, #090e48 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid #4ea8de;
-    border-radius: 16px;
-    padding: 2rem 1.8rem;
-    box-shadow: 0 10px 30px black;
+.seccion-metodologia-alianzas {
+    width: 100%;
+    margin-bottom: 6rem;
 }
 
-.titulo-requisitos,
-.titulo-beneficios {
+.panel-cientifico {
+    background-color: #030b3dbf;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #4e9dbe66;
+    border-radius: 16px;
+    padding: 2.2rem 2rem;
+    height: 100%;
+    box-shadow: 0 10px 30px #00000080;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.panel-cientifico:hover {
+    border-color: #90e0ef;
+    box-shadow: 0 15px 35px #00b4d833;
+}
+
+.titulo-panel {
     color: #FFFFFF;
     font-size: 1.35rem;
     font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.subtitulo-panel {
+    color: #90e0ef;
+    font-size: 0.92rem;
     margin-bottom: 1.2rem;
-    border-bottom: 1px solid rgba(144, 224, 239, 0.3);
+    font-weight: 400;
+    border-bottom: 1px solid #90e0ef4d;
     padding-bottom: 0.5rem;
 }
 
-.lista-requisitos,
-.lista-beneficios {
+.lista-detallada {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.elemento-requisito,
-.elemento-beneficio {
+.lista-detallada li {
     color: #e0fbfc;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -288,27 +298,29 @@ p {
     padding-left: 1.3rem;
 }
 
-.elemento-requisito::before,
-.elemento-beneficio::before {
+.lista-detallada li::before {
     content: "•";
-    color: #48cae4;
+    color: #90e0ef;
     font-size: 1.2rem;
     position: absolute;
     left: 0;
     top: -2px;
 }
 
-
+.lista-detallada strong {
+    color: #FFFFFF;
+    font-weight: 600;
+}
 
 .sec-vol {
-    background: linear-gradient(135deg, #00b4d8 0%, #004a6c 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid #97d7e4;
+    background: linear-gradient(135deg, #022c38e6 0%, #00506ce6 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid #4e9dbe80;
     border-radius: 18px;
     padding: 3rem;
-    margin: 4rem 0 2rem 0;
-    box-shadow: 0 12px 35px #48cae4;
+    width: 100%;
+    box-shadow: 0 15px 35px #00000099;
 }
 
 .titulo-vol {
@@ -316,7 +328,7 @@ p {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 10px black;
+    text-shadow: 0 2px 10px #00000080;
 }
 
 .texto-vol {
@@ -336,7 +348,7 @@ p {
     border-radius: 10px;
     border: 1px solid #90e0ef;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px #004a6c6f;
+    box-shadow: 0 4px 15px #004a6c6e;
 }
 
 .btn-cta-pro:hover {
@@ -346,15 +358,14 @@ p {
     color: #FFFFFF;
 }
 
-
-
-
 .pie-pagina {
     background-color: var(--fondo-pagina-oscu);
     color: var(--gris-azulado);
     border-top: 1px solid #40849f93;
     padding: 2.5rem 1rem;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .nombre-institucion {

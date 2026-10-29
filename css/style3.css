@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 :root {
-    --azul-abisal:       #022C38;
-    --azul-oceano:       #00506C;
-    --azul-cian:         #4E9DBE;
-    --azul-hielo:        #AFC9D9;
-    --gris-azulado:      #A2BCC6;
-    --blanco:            #FFFFFF;
+    --azul-abisal: #022C38;
+    --azul-oceano: #00506C;
+    --azul-cian: #4E9DBE;
+    --azul-hielo: #AFC9D9;
+    --gris-azulado: #A2BCC6;
+    --blanco: #FFFFFF;
     --fondo-pagina-oscu: #01062C;
     --fuente-titulos: 'Playfair Display SC', serif;
     --fuente-principal: 'Lato', sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--fondo-pagina-oscu);
-
     color: var(--blanco);
     margin: 0;
     padding: 0;
@@ -29,8 +31,9 @@ body {
     z-index: 1000;
     background-color: #010b22;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid #4E9DBE;
-    box-shadow: 0 6px 10px rgba(0, 80, 108, 0.4);
+    box-shadow: 0 6px 10px #00506c66;
 }
 
 .contenedor-navegacion {
@@ -73,9 +76,13 @@ body {
     border-radius: 10px;
     transition: all 0.3s ease;
     white-space: nowrap;
+    display: block;
+    position: relative;
+    z-index: 10;
 }
 
-.enlace-navegacion:hover, .enlace-navegacion[aria-current="page"] {
+.enlace-navegacion:hover, 
+.enlace-navegacion[aria-current="page"] {
     background-color: #00506C;
     color: #FFFFFF;
     border-bottom: 2px solid #4E9DBE;
@@ -90,23 +97,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
     letter-spacing: 1px;
 }
-p {
+
+p, span, a, button, label, li {
     font-family: var(--fuente-principal);
 }
-
-
 
 .encabezado-pagina {
     padding-top: 100px;
 }
 
 .cabecera-pagina {
-    background: 
-        linear-gradient(135deg, rgba(1, 6, 44, 0.35) 0%, rgba(1, 6, 44, 0.85) 65%, rgba(1, 6, 44, 0.98) 100%),
-        url('../img/oceano.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: transparent;
     min-height: 55vh;
     display: flex;
     flex-direction: column;
@@ -114,11 +115,21 @@ p {
     align-items: flex-start;
     padding: 8rem 5rem 4rem 5rem;
     position: relative;
-    border-bottom: 1px solid rgba(78, 157, 190, 0.25);
+    border-bottom: 1px solid #4e9dbe40;
 }
 
 .contenedor-cabecera {
     max-width: 800px;
+}
+
+.subtitulo-cabecera {
+    display: block;
+    font-size: 1.1rem;
+    color: #90e0ef;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .titulo-pagina {
@@ -128,7 +139,7 @@ p {
     color: #FFFFFF;
     margin-bottom: 1rem;
     line-height: 1.1;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 4px 20px #000000b3;
 }
 
 .descripcion-pagina {
@@ -136,35 +147,48 @@ p {
     color: var(--azul-hielo);
     line-height: 1.6;
     font-weight: 300;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 10px #000000b3;
     margin: 0;
 }
 
+.fondo-pantalla-completa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: 
+        linear-gradient(180deg, #01062ce0 0%, #010b22ea 50%, #01062ce0 100%),
+        url('../img/oceano.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .contenido-principal {
-    padding: 3rem 1rem;
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.seccion-lineas-accion {
+    width: 100%;
 }
 
 .titulo-lineas-accion {
     text-align: center;
-    color: var(--azul-abisal);
+    color: #FFFFFF;
     font-size: 2.3rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
-    position: relative;
-}
-
-.titulo-lineas-accion::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--azul-cian), transparent);
-    margin: 0.5rem auto 0 auto;
-    border-radius: 2px;
 }
 
 .descripcion-lineas-accion {
-    color: var(--fondo-pagina-oscu);
+    color: var(--azul-hielo);
     font-size: 1.05rem;
     text-align: center;
     max-width: 800px;
@@ -177,11 +201,11 @@ p {
     background: linear-gradient(135deg, #0e4687 0%, #190b98 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(78, 157, 190, 0.4);
+    border: 1px solid #4e9dbe66;
     border-radius: 14px;
     padding: 1.5rem 1.2rem;
     height: 100%;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px #00000080;
     transition: all 0.35s ease;
     display: flex;
     flex-direction: column;
@@ -207,7 +231,7 @@ p {
     font-size: 1.25rem;
     font-weight: 650;
     margin-bottom: 0.8rem;
-    border-bottom: 1.5px solid rgba(144, 224, 239, 0.3);
+    border-bottom: 1.5px solid #90e0ef4d;
     padding-bottom: 0.4rem;
     text-align: left;
 }
@@ -221,34 +245,42 @@ p {
     text-align: left;
 }
 
+.seccion-metodologia-alianzas {
+    width: 100%;
+}
+
 .panel-cientifico {
-    background-color: #FFFFFF;
-    padding: 4rem 1rem;
-    margin-top: 2rem;
-    border: 1px solid #bdbdbd;
+    background-color: #030b3dbf;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #4e9dbe66;
     border-radius: 16px;
-    padding: 2rem 1.8rem;
-    max-width: 580px;
-    margin: auto;
-    height: 90%;
-    box-shadow: 0 10px 30px rgb(177, 170, 170);
+    padding: 2.2rem 2rem;
+    height: 100%;
+    box-shadow: 0 10px 30px #00000080;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.panel-cientifico:hover {
+    border-color: #90e0ef;
+    box-shadow: 0 15px 35px #00b4d833;
 }
 
 .titulo-panel {
-    color: var(--fondo-pagina-oscu);
+    color: #FFFFFF;
     font-size: 1.35rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
 .subtitulo-panel {
-    color: var(--azul-abisal);
+    color: #90e0ef;
     font-size: 0.92rem;
     margin-bottom: 1.2rem;
     font-weight: 400;
-    border-bottom: 1px solid rgba(144, 224, 239, 0.3);
+    border-bottom: 1px solid #90e0ef4d;
     padding-bottom: 0.5rem;
 }
 
@@ -259,7 +291,7 @@ p {
 }
 
 .lista-detallada li {
-    color: var(--azul-oceano);
+    color: #e0fbfc;
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 0.8rem;
@@ -269,7 +301,7 @@ p {
 
 .lista-detallada li::before {
     content: "•";
-    color: #0c1547;
+    color: #90e0ef;
     font-size: 1.2rem;
     position: absolute;
     left: 0;
@@ -277,19 +309,19 @@ p {
 }
 
 .lista-detallada strong {
-    color: #0c1547;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
 .sec-vol {
-    background: linear-gradient(135deg, #00b4d8 0%, #004a6c 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid #97d7e4;
+    background: linear-gradient(135deg, #022c38e6 0%, #00506ce6 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid #4e9dbe80;
     border-radius: 18px;
     padding: 3rem;
-    margin: 4rem 0 2rem 0;
-    box-shadow: 0 12px 35px #48cae4;
+    width: 100%;
+    box-shadow: 0 15px 35px #00000099;
 }
 
 .titulo-vol {
@@ -297,7 +329,7 @@ p {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 10px black;
+    text-shadow: 0 2px 10px #00000080;
 }
 
 .texto-vol {
@@ -317,7 +349,7 @@ p {
     border-radius: 10px;
     border: 1px solid #90e0ef;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px #004a6c6f;
+    box-shadow: 0 4px 15px #004a6c6e;
 }
 
 .btn-cta-pro:hover {
@@ -333,6 +365,8 @@ p {
     border-top: 1px solid #40849f93;
     padding: 2.5rem 1rem;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .nombre-institucion {
@@ -344,4 +378,4 @@ p {
 .mensaje-conservacion {
     margin: 0;
     font-size: 0.9rem;
-}   
+}

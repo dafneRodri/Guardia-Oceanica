@@ -230,7 +230,7 @@ p {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #F8FCFD;
-    border-left: 5px solid var(--azul-cian, #4E9DBE);
+    border-left: 5px solid var(--azul-cian);
     padding: 2.5rem 3rem;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(2, 44, 56, 0.05);
@@ -427,9 +427,9 @@ p {
     max-width: 900px;
     margin: 0 auto;
     background-color: #F8FCFD;
-    border-left: 5px solid var(--azul-cian);
+    
     padding: 2rem 2.5rem;
-    border-radius: 8px;
+    border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(2, 44, 56, 0.04);
 }
 .contenido-ayudar p {
