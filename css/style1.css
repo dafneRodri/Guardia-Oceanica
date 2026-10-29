@@ -301,7 +301,7 @@
 }
 
 .tarjeta-especie {
-    border: 1px solid rgba(78, 157, 190, 0.3);
+    border: 1px solid #012A4F;
     border-radius: 12px;
     padding: 2rem 1.5rem;
     height: 100%;
@@ -354,7 +354,7 @@
 }
 .tarjeta-proyecto {
     color: #A2BCC6;
-    background-color: #04011d;
+    background-color: #012A4F;
     padding: 2rem 1.5rem;
     border-radius: 12px;
     height: 100%;

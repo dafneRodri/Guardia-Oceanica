@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Guardia Oceánica | Voluntariado</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
         <link href="css/style4.css" rel="stylesheet">
     </head>
 
@@ -178,7 +177,7 @@
                     </section>
 
                     <section class="col-12 col-lg-6">
-                        <div class="apartado-beneficios h-100">
+                        <div class="apartado-beneficios">
                             <h3 class="titulo-beneficios">
                                 ¿Qué ofrecemos a los voluntarios?
                             </h3>
@@ -202,52 +201,52 @@
                 </div>
 
 
-                <section class="seccion-carrusel mb-5">
-                    <div id="carruselVoluntariado" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
-                        
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carruselVoluntariado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carruselVoluntariado" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carruselVoluntariado" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
+                <div class="seccion-carrusel mb-5">
+    <div class="seccion-carrusel mb-5">
+    <div id="carruselVoluntariado" class="carousel slide shadow-lg rounded-4 overflow-hidden">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="4000">
-                                <img src="img/accion-subacuatica.webp" class="d-block w-100 imagen-carrusel" alt="Buzo científico en acción">
-                                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
-                                    <h5>Acción Subacuática</h5>
-                                    <p>Nuestros voluntarios de buceo participan activamente en la restauración de arrecifes de coral.</p>
-                                </div>
-                            </div>
+        <div class="carousel-inner" style="position: relative; width: 100%; overflow: hidden;">
+            <div class="carousel-item active" style="display: none; width: 100%;">
+                <img src="img/accion-subacuatica.webp" class="d-block w-100 imagen-carrusel" alt="Buzo científico en acción">
+                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
+                    <h5>Acción Subacuática</h5>
+                    <p>Nuestros voluntarios de buceo participan activamente en la restauración de arrecifes de coral.</p>
+                </div>
+            </div>
 
-                            <div class="carousel-item" data-bs-interval="4000">
-                                <img src="img/patrulla-noct.webp" class="d-block w-100 imagen-carrusel" alt="Protección de anidación">
-                                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
-                                    <h5>Patrullaje Nocturno</h5>
-                                    <p>Vigilancia y protección de nidos de tortugas marinas en playas de anidación protegidas.</p>
-                                </div>
-                            </div>
+            <div class="carousel-item" style="display: none; width: 100%;">
+                <img src="img/patrulla-noct.webp" class="d-block w-100 imagen-carrusel" alt="Protección de anidación">
+                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
+                    <h5>Patrullaje Nocturno</h5>
+                    <p>Vigilancia y protección de nidos de tortugas marinas en playas de anidación protegidas.</p>
+                </div>
+            </div>
 
-                            <div class="carousel-item" data-bs-interval="4000">
-                                <img src="img/educ-comunitaria.webp" class="d-block w-100 imagen-carrusel" alt="Educación ambiental">
-                                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
-                                    <h5>Educación Comunitaria</h5>
-                                    <p>Talleres en centros educativos para concientizar sobre el cuidado de las costas.</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="carousel-item" style="display: none; width: 100%;">
+                <img src="img/educ-comunitaria.webp" class="d-block w-100 imagen-carrusel" alt="Educación ambiental">
+                <div class="carousel-caption d-none d-md-block fondo-caption rounded-3 p-3">
+                    <h5>Educación Comunitaria</h5>
+                    <p>Talleres en centros educativos para concientizar sobre el cuidado de las costas.</p>
+                </div>
+            </div>
+        </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselVoluntariado" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carruselVoluntariado" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
-                    </div>
-                </section>
-
+        <button class="carousel-control-prev" type="button" id="btnAnterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" id="btnSiguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</div>
                     
                 <section class="sec-vol">
                     <div class="row align-items-center">

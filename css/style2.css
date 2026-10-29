@@ -73,8 +73,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.enlace-navegacion:hover, 
-.enlace-navegacion[aria-current="page"] {
+.enlace-navegacion:hover, .enlace-navegacion[aria-current="page"] {
     background-color: var(--azul-oceano);
     color: var(--blanco);
     border-bottom: 2px solid var(--azul-cian);
@@ -91,13 +90,7 @@ body {
 
 .fondo-inicio {
     background: 
-        linear-gradient(
-            135deg, 
-            rgba(1, 6, 44, 0.35) 0%,   
-            rgba(1, 6, 44, 0.85) 65%,  
-            rgba(1, 6, 44, 0.98) 100%  
-        ),
-        url('../img/oceano.webp');
+        linear-gradient(135deg, #01062c59 0%,#01062cd9 65%, #01062cfa 100%),url('../img/oceano.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,6 +131,7 @@ body {
 .contenido-principal {
     padding: 3rem 1rem;
 }
+
 section h2 {
     text-align: center;
     color: var(--azul-hielo);
@@ -155,6 +149,7 @@ section h2::after {
     margin: 0.5rem auto 0 auto;
     border-radius: 2px;
 }
+
 section > p {
     color: var(--gris-azulado);
     font-size: 1.05rem;
@@ -163,94 +158,155 @@ section > p {
     margin: 0 auto 2.5rem auto;
     line-height: 1.6;
     font-weight: 300;
+
 }
 
 
-
-
-
-@media (min-width: 992px) {
-    .col-lg-4 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
+.especie-marina-contenedor {
+    background-color: transparent;
+    width: 100%;
+    height: 320px;
+    perspective: 1000px;
 }
+
 .especie-marina {
-    background: linear-gradient(135deg, rgba(1, 22, 39, 0.88) 0%, rgba(0, 10, 20, 0.96) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(78, 157, 190, 0.3);
-    border-radius: 14px;
-    padding: 1.2rem 1rem;
+    position: relative;
+    width: 100%;
     height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);    
+    transform-style: preserve-3d;
+    border-radius: 14px;
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-    transition: all 0.35s ease;
+}
+
+.especie-marina-contenedor:hover .especie-marina {
+    transform: rotateY(180deg);
+}
+
+.especie-frente, .especie-reverso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(78, 157, 190, 0.3);
+}
+
+.especie-frente {
+    background: linear-gradient(135deg, rgba(1, 22, 39, 0.92) 0%, rgba(0, 10, 20, 0.98) 100%);
+    backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
+    justify-content: flex-start;
+    padding: 1.2rem 1rem;
 }
-.especie-marina::before {
-    content: "";
+.especie-frente, .especie-reverso {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, #00b4d8, #90e0ef);
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(78, 157, 190, 0.3);
+    transition: 0.3s ease;
 }
-.especie-marina:hover {
-    transform: translateY(-6px);
-    border-color: #90e0ef;
-    box-shadow: 0 12px 30px rgba(0, 180, 216, 0.25);
-    background: linear-gradient(135deg, rgba(2, 35, 58, 0.95) 0%, rgba(1, 15, 30, 0.98) 100%);
+
+.especie-marina-contenedor:hover .especie-frente, .especie-marina-contenedor:hover .especie-reverso {
+    border-color: #00b4d8;
+    box-shadow: inset 0 0 15px rgba(0, 180, 216, 0.2);
 }
-.especie-marina img {
+
+.especie-frente img {
     width: 100%;
-    height: 150px;
+    height: 190px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 0.9rem;
     border: 1px solid rgba(144, 224, 239, 0.3);
-    transition: transform 0.3s ease;
 }
-.especie-marina:hover img {
-    transform: scale(1.03);
-}
-.especie-marina h3 {
+
+.especie-frente h3 {
     color: #90e0ef;
     font-size: 1.15rem;
     font-weight: 650;
-    margin-bottom: 0.5rem;
-    border-bottom: 1.5px solid rgba(78, 157, 190, 0.25);
-    padding-bottom: 0.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.especie-reverso {
+    background: linear-gradient(135deg, rgba(2, 35, 58, 0.96) 0%, rgba(1, 15, 30, 0.99) 100%);
+    backdrop-filter: blur(12px);
+    color: #caf0f8;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
     text-align: left;
 }
-.especie-marina p {
+
+.especie-reverso h3 {
+    color: #90e0ef;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    border-bottom: 1.5px solid rgba(78, 157, 190, 0.3);
+    padding-bottom: 0.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.especie-reverso p {
     color: #caf0f8;
-    font-size: 0.88rem;
-    line-height: 1.45;
+    font-size: 0.9rem;
+    line-height: 1.5;
     margin: 0;
     font-weight: 300;
-    text-align: left;
+
 }
 
 
 
 
 .apartado-importancia {
-    background: rgba(2, 2, 56, 0.6) !important;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(78, 157, 190, 0.3);
-    border-radius: 16px;
+    background: linear-gradient(135deg, #02233abf 0%, #010f1ee6 100%) !important;
+    border: 1px solid #4e9dbe59;
+    border-radius: 18px;
     max-width: 900px;
-    margin: 4.5rem auto 2rem auto;
-    padding: 3rem !important;
+    margin: 5rem auto 3rem auto;
+    padding: 3.5rem 3rem !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.apartado-importancia:hover {
+    transform: translateY(-4px);
+    border-color: #00b4d8;
+    box-shadow: 0 20px 40px #00b4d833;
 }
 .apartado-importancia h2 {
     color: var(--azul-hielo) !important;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem !important;
+    text-shadow: 0 2px 10px #00b4d84d;
 }
+.apartado-importancia p {
+    color: var(--azul-hielo);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+.apartado-importancia p {
+    margin-bottom: 0;
+}
+
 .pie-pagina {
     background-color: var(--fondo-pagina-oscu);
     color: var(--gris-azulado);
